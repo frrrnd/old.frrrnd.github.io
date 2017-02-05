@@ -10,8 +10,7 @@ url: "http://localhost/blog" # the base hostname & protocol for your site
 
 author:
   fullname: Fernando Soares
-  googleplus: https://www.google.com/+MotaquillahMaddane
-  github: ferspeak
+  github: frrrnd
   twitter: frrrnd
   # disqus: your_disqus_forum_shortname
 
