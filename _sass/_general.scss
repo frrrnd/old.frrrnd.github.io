@@ -1,0 +1,18 @@
+body {
+	background-color: black;
+}
+
+.wrapper {
+    max-width: 60em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+	margin: 0;
+	line-height: 1.8;
+}
+
+a {
+	color: $link-color;
+}

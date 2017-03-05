@@ -36,8 +36,6 @@ body {
 }
 
 a {
-    color: $cloudy;
-    font-weight: bold;
     text-decoration: none;
 
     &:hover {
@@ -47,7 +45,6 @@ a {
 
 p {
     font-size: 20px;
-    line-height: 32px;
 }
 
 img {
@@ -93,15 +90,8 @@ strong {
 }
 
 /* =Header */
-.wrapper {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.navigation {
-    float:left;
-}
+
 
 .logo {
     font-size: 50px;
@@ -110,39 +100,6 @@ strong {
     display: block;
 }
 
-.menu {
-    color: $cloudy;
-    font-size: 18px;
-    margin:0px;
-    margin-top: 6px;
-    padding: 0px;
-    list-style-type: none;
-}
-
-.menu__entry {
-    display: inline-block;
-    margin-right: 35px;
-
-    &:last-child {
-        margin-right: 0px;
-    }
-}
-
-.menu__entry a {
-    font-weight: 400;
-}
-
-.social-links {
-    float:right;
-    font-size: 24px;
-    color: $cloudy;
-    list-style-type: none;
-}
-
-.social-links__entry {
-    display: inline-block;
-    margin-left: 10px;
-}
 
 /* =Titles */
 .page-title {

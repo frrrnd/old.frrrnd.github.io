@@ -1,0 +1,45 @@
+.header {
+	padding: 4em 0;
+	border-bottom: 1px solid #eee;
+}
+
+
+.header__about {
+	width: 100%;
+	max-width: 600px;
+	display: flex;
+	flex-direction: column;
+
+	p {
+		width: 100%;
+		display: block;
+		font-size: 30px;
+		line-height: 1.6;
+
+		&:first-child {
+			font-family: monospace;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			color: #ccc;
+			font-size: 14px;
+		}
+	}
+}
+
+.social-links {
+	width: 100%;
+	margin-top: 30px;
+
+	ul {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+}

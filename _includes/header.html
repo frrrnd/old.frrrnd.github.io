@@ -1,25 +1,48 @@
 <header class="header">
     <!-- <div class="navigation">
-        <a href="/" class="logo">{{ site.title }}</a>
-
-        <ul class="menu">
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
-            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
-        </ul>
+        
     </div> -->
 
-   <!--  <ul class="social-links">
+    <!-- <ul class="social-links">
         {% if site.author.github %}
             <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-github"></i>
+                Github
             </a>
         {% endif %}
 
         {% if site.author.twitter %}
             <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-twitter"></i>
+                Twitter
             </a>
         {% endif %}
     </ul> -->
+
+    <div class="header__nav">
+        <ul class="menu">
+            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            <li class="menu__entry"><a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a></li>
+            <li class="menu__entry"><a href="{{ '/work' | prepend: site.baseurl }}">Work</a></li>
+            <li class="menu__entry"><a href="{{ '/now' | prepend: site.baseurl }}">Now</a></li>
+            <li class="menu__entry"><a href="{{ '/contact' | prepend: site.baseurl }}">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="header__about">
+        <!-- <a href="/" class="logo">{{ site.title }}</a> -->
+        <p>Hello!</p>
+        <p>My name is Fernando Soares, <strong>a ux/ui designer in Florianópolis</strong> who loves all things HTML, CSS and Javascript and interfaces.</p>
+        <a class="twitter-follow-button" href="https://twitter.com/frrrnd" data-size="large" data-show-count="false">Follow</a>
+
+        <div class="social-links">
+            <ul>
+                <li><a target="_blank" href="https://twitter.com/frrrnd">Twitter</a></li>
+                <li><a target="_blank" href="https://dribbble.com/fernando">Dribbble</a></li>
+                <li><a target="_blank" href="https://github.com/frrrnd">Github</a></li>
+                <li><a target="_blank" href="https://instagram.com/ferspeak">Instagram</a></li>
+                <li><a target="_blank" href="https://medium.com/@frrrnd">Medium</a></li>
+            </ul>
+        </div>
+
+    </div>
 
 </header>

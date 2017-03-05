@@ -11,6 +11,13 @@ $iron: #333333;
 $cloudy: #828282;
 
 @import
+    "colors",
+    "general",
+    "parts/article",
+    "parts/header",
+    "parts/home",
+    "parts/nav",
+    "parts/footer",
     "mixins",
     "default",
     "404"

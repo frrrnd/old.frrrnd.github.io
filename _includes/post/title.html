@@ -1,4 +1,8 @@
-<h1 class="page-title post-title">
+<!-- <h1 class="page-title post-title">
     <div class="page-title__text post-title__text">{{ page.title }}</div>
     <div class="page-title__subtitle post-title__subtitle">{{ page.subtitle }}</div>
+</h1> -->
+
+<h1 class="article__home--title">
+	<a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
 </h1>

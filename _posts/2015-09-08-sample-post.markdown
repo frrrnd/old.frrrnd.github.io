@@ -9,7 +9,7 @@ categories: [tool]
 Just a sample post to show some of the *typography* elements supported from
 **daktilo** theme.
 
-___
+
 
 A blockquote:
 
