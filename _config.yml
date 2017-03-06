@@ -8,10 +8,15 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://localhost/blog" # the base hostname & protocol for your site
 
+future: true
+
 author:
   fullname: Fernando Soares
   github: frrrnd
   twitter: frrrnd
+  dribbble: fernando
+  instagram: ferspeak
+  medium: frrrnd
   # disqus: your_disqus_forum_shortname
 
 # google_analytics: 'UA-XXXXXXXX-X'

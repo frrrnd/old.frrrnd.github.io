@@ -11,5 +11,18 @@
 
 	li {
 		margin-left: 25px;
+		position: relative;
+	}
+
+	.highlight {
+		background: -webkit-linear-gradient(315deg, #9B93E8, #29DAF6);
+		 -webkit-background-clip: text;
+		 -webkit-text-fill-color: transparent;
+
+		 &:hover {
+		 	background: -webkit-linear-gradient(315deg, #29DAF6, #9B93E8);
+		 	-webkit-background-clip: text;
+		 -webkit-text-fill-color: transparent;
+		 }
 	}
 }

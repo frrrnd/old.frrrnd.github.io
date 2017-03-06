@@ -1,0 +1,14 @@
+.shots {
+	list-style-type: none;
+	padding-left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	&--shot {
+		display: inline-block;
+		flex: 1 0 33%;
+		padding: 10px;
+	}
+}

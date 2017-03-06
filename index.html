@@ -6,19 +6,11 @@ sitemap:
   priority: 0.9
 ---
 
-<!-- <ul class="list-posts">
-    {% for post in site.posts %}
-        <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="post-teaser__title">{{ post.title }}</span>
-                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-            </a>
-        </li>
-    {% endfor %}
-</ul> -->
+<!-- {% for category in site.data.categories %}
+	<li class="categories__item"><a href="{{ '/categories/' | append: category.slug | prepend: site.baseurl }}">{{ category.name }}</a></li>
+{% endfor %} -->
 
-
-<section class="articles__list">
+<!-- <section class="articles__list">
 	{% for post in site.posts %}
 	<article class="article__home">
 		<h2 class="article__home--title">
@@ -31,4 +23,10 @@ sitemap:
         </div>
 	</article>
 	{% endfor %}
+</section> -->
+
+<section class="dribbble-shots">
+	<h2></h2>
+	<ul class="shots"></ul>
+
 </section>

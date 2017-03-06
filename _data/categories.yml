@@ -6,3 +6,9 @@
 
 - slug: productivity
   name: Productivity
+
+- slug: notes
+  name: Notes
+
+- slug: works
+  name: Works
