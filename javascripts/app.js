@@ -34,3 +34,8 @@ window.twttr = (function(d, s, id) {
 
   return t;
 }(document, "script", "twitter-wjs"));
+
+$('.bt-menu').on('click', function(e) {
+  e.preventDefault();
+  $('body').toggleClass('menu-open');
+});
