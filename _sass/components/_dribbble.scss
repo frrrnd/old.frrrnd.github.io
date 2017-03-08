@@ -9,6 +9,10 @@
 	&--shot {
 		display: inline-block;
 		flex: 1 0 33%;
-		padding: 10px;
+		padding: 0 10px;
+
+		img {
+			border-radius: 3px;
+		}
 	}
 }
