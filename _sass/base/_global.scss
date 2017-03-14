@@ -1,0 +1,26 @@
+/*
+	Global variables, minxins and placeholders.
+*/
+
+/* General */
+$wrapper-width: 60em;
+
+/* Typo */
+$heading-font: 'Yantramanav', 'Helvetica', Arial, sans-serif;
+$text-font: 'Lora', 'Georgia', serif;
+
+/* Colors */
+$text-color: #222;
+$background-color: #FFF;
+$link-color: rebeccapurple;
+$link-color-social: #ccc;
+$link-color-menu: #333;
+
+/* Mixins */
+
+@mixin flex($direction, $align-items, $justify-content) {
+	display: flex;
+	flex-direction: $direction;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}

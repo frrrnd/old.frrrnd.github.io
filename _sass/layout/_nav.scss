@@ -1,0 +1,25 @@
+.header__nav {
+	width: 100%;
+	flex: 50%;
+}
+
+.header__nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-left: 0;
+
+	li {
+		position: relative;
+	    display: inline-block;
+	    margin: 0 10px;
+	    font-weight: bold;
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    letter-spacing: 1px;
+
+	    a {
+	      color: $link-color-menu;
+	    }
+	}
+}

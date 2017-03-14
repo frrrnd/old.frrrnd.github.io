@@ -1,0 +1,42 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: $heading-font;
+    font-weight: 400;
+    color: $text-color;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    cursor: url(../images/normal.ico), auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+
+    a {
+        cursor: url(../images/red.ico), auto;
+    }
+}
+
+.wrapper {
+    max-width: $wrapper-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+}

@@ -1,58 +1,58 @@
 <header class="header">
-    <!-- <div class="navigation">
-        
-    </div> -->
-
-    <!-- <ul class="social-links">
-        {% if site.author.github %}
-            <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                Github
+    <div class="wrapper">
+        <div class="header__top">
+            <a class="logo__link" href="/">
+                <img class="logo__image" src="../assets/images/frrrnd-logo.svg">
             </a>
-        {% endif %}
 
-        {% if site.author.twitter %}
-            <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
-                Twitter
-            </a>
-        {% endif %}
-    </ul> -->
-
-    <div class="header__nav">
-        <ul class="menu">
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">Sobre</a></li>
-            <li class="menu__entry"><a href="{{ '/categories/works/' | prepend: site.baseurl }}">Trabalhos</a></li>
-            <li class="menu__entry highlight"><a href="{{ '/categories/notes/' | prepend: site.baseurl }}">Notes</a></li>
-            <li class="menu__entry"><a href="{{ '/now' | prepend: site.baseurl }}">Now</a>
-            </li>
-            <li class="menu__entry"><a href="{{ '/contact' | prepend: site.baseurl }}">Contato</a></li>
-        </ul>
-    </div>
-
-    <button class="bt-menu" title="Menu">
-          <span class="hamburguer">
-            <span class="bar bar-1"></span>
-            <span class="bar bar-2"></span>
-            <span class="bar bar-3"></span>
-          </span>
-        </button>
-
-    <div class="header__about">
-        <!-- <a href="/" class="logo">{{ site.title }}</a> -->
-        <a href="/" class="logo">
-            <p>Olá!</p>
-            <p>Meu nome é Fernando Soares, <strong>ux/ui designer em Florianópolis</strong> que ama HTML, CSS, Javascript e interfaces.</p>
-        </a>
-
-        <div class="social-links">
-            <ul>
-                <li><a target="_blank" href="https://twitter.com/{{ site.author.twitter }}">Twitter</a></li>
-                <li><a target="_blank" href="https://dribbble.com/{{ site.author.dribbble }}">Dribbble</a></li>
-                <li><a target="_blank" href="https://github.com/{{ site.author.github }}">Github</a></li>
-                <li><a target="_blank" href="https://instagram.com/{{ site.author.instagram }}">Instagram</a></li>
-                <li><a target="_blank" href="https://medium.com/@{{ site.author.medium }}">Medium</a></li>
-            </ul>
+            <div class="header__nav">
+                <ul class="header__nav__menu">
+                    <li><a href="{{ '/sobre/' | prepend: site.baseurl }}">Sobre</a></li>
+                    <li><a href="{{ '/notes/' | prepend: site.baseurl }}">Notes</a></li>
+                    <li><a href="{{ '/now/' | prepend: site.baseurl }}">Now</a></li>
+                    <li><a href="{{ '/contact/' | prepend: site.baseurl }}">Contato</a></li>
+                </ul>
+            </div>
         </div>
 
-    </div>
+        <div class="header__bottom">
+            <div class="header__about">
+                <p>Fernando Soares é ux/ui designer & front end designer que ama HTML semântico, CSS, Javascript e interfaces.</p>
+            </div>
 
+            <div class="header__social">
+                <div class="social-links">
+                    <ul>
+                        {% if site.author.twitter %}
+                        <li><a target="_blank" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        {% endif %}
+
+                        {% if site.author.dribbble %}
+                        <li><a target="_blank" href="https://dribbble.com/{{ site.author.dribbble }}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                        
+                        {% if site.author.github %}
+                        <li><a target="_blank" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                        
+                        {% if site.author.instagram %}
+                        <li><a target="_blank" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                        
+                        {% if site.author.medium %}
+                        <li><a target="_blank" href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+                        {% endif %}
+
+                        {% if site.author.codepen %}
+                        <li><a target="_blank" href="https://codepen.io/{{ site.author.codepen }}"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                        
+                        {% if site.author.linkedin %}
+                        <li><a target="_blank" href="https://linkedin.com/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>

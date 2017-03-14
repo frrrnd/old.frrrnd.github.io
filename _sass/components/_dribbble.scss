@@ -6,13 +6,27 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 
+	@for $i from 1 to 10 {
+		.shots--reveal:nth-child(#{$i}) {
+			animation: reveal .8s forwards;
+			animation-delay: $i * 0.25s;
+		}
+	}
+
 	&--shot {
 		display: inline-block;
-		flex: 1 0 33%;
+		width: 33.3%;
 		padding: 0 10px;
+		margin-bottom: 20px;
+		opacity: 0;
 
 		img {
 			border-radius: 3px;
 		}
 	}
+}
+
+@keyframes reveal {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }

@@ -1,0 +1,25 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+sitemap:
+  exclude: 'yes'
+---
+@charset "utf-8";
+
+@import
+    "base/global",
+    "base/normalize",
+    "base/general",
+    "utils/mixins",
+    "base/typography",
+    "base/media",
+    "layout/article",
+    "layout/header",
+    "layout/home",
+    "layout/nav",
+    "layout/footer",
+    "components/dribbble",
+    "components/font-awesome",
+    "default",
+    "pages/404",
+    "pages/home",
+    "components/loading";

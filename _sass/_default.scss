@@ -1,128 +1,6 @@
-/* =Base */
-
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}
-
-h1, h2 {
-    margin: 0;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Lora';
-    color: #3a3a3a;
-    background-color: #FFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: relative;
-    cursor: url(../images/cursor-active.png), auto;
-}
-
-/*
-    Header.
-*/
-
-.header {
-    width: 100%;
-    min-height: 200px;
-    height: 100%;
-}
-
-a {
-    text-decoration: none;
-
-    &:hover {
-
-    }
-}
-
-p {
-    font-size: 20px;
-}
-
-img {
-    margin: 40px auto;
-    display: block;
-    max-width: 100%;
-}
-
-blockquote {
-    letter-spacing: 3px;
-    margin:0px;
-    margin-top: 40px;
-    margin-bottom: 70px;
-    padding: 0px;
-    text-align: center;
-    position: relative;
-
-    footer {
-        position: absolute;
-        bottom: -35px;
-        font-size: 15px;
-        color: $iron;
-        letter-spacing: 0px;
-        left:0px;
-        right: 0px;
-
-        &:before { content: "** "; }
-        &:after { content: " **"; }
-    }
-
-    p {
-        display: inline;
-        font-size: 20px;
-        color: $cloudy;
-        font-weight: 400;
-        &:before { content: "“ "; }
-        &:after { content: " ”"; }
-    }
-}
-
-strong {
-    color: $iron;
-}
-
-/* =Header */
-
-
 
 /* =Titles */
-.page-title {
-    text-align: center;
-}
 
-.page-title__text {
-    font-weight: 700;
-    font-size: 70px;
-    text-align: left;
-}
-
-.page-title__subtitle {
-    font-weight: 400;
-    font-size: 22px;
-    color: $cloudy;
-    text-align: left;
-}
-
-.post-title {
-    margin-bottom: 110px;
-}
-
-.post-title__text {
-    font-size: 45px;
-}
-
-.post-title__subtitle {
-    font-size: 20px;
-}
 
 /* =Post teasers */
 
@@ -139,7 +17,7 @@ strong {
 
 .post-teaser__title {
     font-size: 45px;
-    color: $iron;
+    color: #333;
     font-family: 'Lora';
     font-weight: 700;
     width: 100%;
@@ -149,7 +27,7 @@ strong {
 .post-teaser__date {
     font-size: 16px;
     vertical-align: middle;
-    color: $cloudy;
+    color: #ccc;
     width: 100%;
     display: block;
 }
@@ -157,14 +35,14 @@ strong {
 .empty-post-list {
     font-size: 22px;
     font-weight: 700;
-    color: $iron;
+    color: #333;
     text-align: center;
 }
 
 /* =Explore */
 .explore {
     text-align: center;
-    color: $cloudy;
+    color: #ccc;
     margin-top: 140px;
 }
 
@@ -191,13 +69,13 @@ strong {
 }
 
 .categories__item a {
-    color: $iron;
+    color: #333;
 }
 
 .categories__item:after {
     content: "/";
     margin-left: 6px;
-    color: $cloudy;
+    color: #ccc;
 }
 
 .categories__item:last-child:after {
@@ -208,7 +86,7 @@ strong {
 
 /* =Post page */
 .about {
-    color: $cloudy;
+    color: #ccc;
     margin-top: 70px;
     text-align: center;
     line-height: 24px;
