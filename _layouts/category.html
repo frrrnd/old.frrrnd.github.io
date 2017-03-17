@@ -1,34 +1,36 @@
 ---
 layout: default
 ---
-{% include category/title.html %}
+<div class="wrapper">
+    {% include category/title.html %}
 
-<ul class="list-posts">
-    {% assign empty_category = true %}
-    {% for post in site.posts %}
-        {% if post.categories contains page.category %}
-            <section class="articles__list">
-                <article class="article__home">
-                    <h2 class="article__home--title">
-                        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <time class="article__home--time">{{ post.date | date: "%d %B %Y" }}</time>
+    <ul class="list-posts">
+        {% assign empty_category = true %}
+        {% for post in site.posts %}
+            {% if post.categories contains page.category %}
+                <section class="articles__list">
+                    <article class="article__home">
+                        <h2 class="article__home--title">
+                            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                        <time class="article__home--time">{{ post.date | date: "%d %B %Y" }}</time>
 
-                    <div class="article__home--content">
-                        {{ post.content }}
-                    </div>
-                </article>
-            </section>
-            {% assign empty_category = false %}
+                        <div class="article__home--content">
+                            {{ post.content }}
+                        </div>
+                    </article>
+                </section>
+                {% assign empty_category = false %}
+            {% endif %}
+        {% endfor %}
+
+        {% if empty_category %}
+            <li class="empty-post-list">
+                It seems that there are no articles on that category,
+                please go back <a href="/">home</a> to see the full list of articles.
+            </li>
         {% endif %}
-    {% endfor %}
+    </ul>
 
-    {% if empty_category %}
-        <li class="empty-post-list">
-            It seems that there are no articles on that category,
-            please go back <a href="/">home</a> to see the full list of articles.
-        </li>
-    {% endif %}
-</ul>
-
-{% include page/explore.html %}
+    <!-- {% include page/explore.html %} -->
+</div>
