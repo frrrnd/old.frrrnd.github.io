@@ -21,13 +21,13 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
-    cursor: url(../images/normal.ico), auto;
+    cursor: url(../images/normal.png), auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
 
     a {
-        cursor: url(../images/red.ico), auto;
+        cursor: url(../images/active.png), auto;
     }
 }
 
