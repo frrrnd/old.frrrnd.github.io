@@ -5,16 +5,22 @@ layout: default
 <div class="wrapper">
 	<section class="articles__list">
 		{% for post in site.posts %}
-		<article class="article__home">
-			<h2 class="article__home--title">
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</h2>
-	        <time datetime="{{ post.date | date: "%d/%m/%Y" }}" class="article__home--time">Em {{ post.date | date: "%d/%m/%Y" }}</time>
+		<article class="article__notes">
+			<header class="article__header">
+				<h2 class="article__title article__title--notes">
+					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+				</h2>
+			
+	        	<time datetime="{{ post.date | date: "%d/%m/%Y" }}" class="article__home--time">Em {{ post.date | date: "%d/%m/%Y" }}</time>
+			</header>
 
-	    	<div class="article__home--content">
-	            {{ post.content }}
+	    	<div class="article__content">
+	            {{ post.excerpt }}
+	            <a href="{{ post.url }}">Leia o post completo</a>
 	        </div>
 		</article>
 		{% endfor %}
 	</section>
 </div>
+
+{% include footer.html %}

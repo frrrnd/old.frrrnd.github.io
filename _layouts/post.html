@@ -3,12 +3,16 @@ layout: default
 ---
 <div class="wrapper">
 
-{% include post/title.html %}
-	
-	<div class="content">
-	    {{ content }}
+<article>
+	<header class="article__header">
+		{% include post/title.html %}
+	</header>
+		
+		<div class="article__content">
+	        {{ content }}
+	    </div>
 	</div>
-</div>
+</article>
 
 {% include footer.html %}
 

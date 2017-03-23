@@ -1,8 +1,17 @@
-<!-- <h1 class="page-title post-title">
-    <div class="page-title__text post-title__text">{{ page.title }}</div>
-    <div class="page-title__subtitle post-title__subtitle">{{ page.subtitle }}</div>
-</h1> -->
-
-<h1 class="article__home--title">
+<h1 class="article__title">
 	<a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
 </h1>
+
+<div class="article__details">
+	<time datetime="{{ page.date | date: "%d/%m/%Y" }}" class="article__details__time">Em {{ page.date | date: "%d/%m/%Y" }}</time> &bullet;
+
+	<span class="article__details__reading" title="Estimated read time">
+	  {% assign words = content | number_of_words %}
+	  {% if words < 360 %}
+	    1 min de leitura
+	  {% else %}
+	    {{ words | divided_by:180 }} mins de leitura
+	  {% endif %}
+	</span>
+
+</div>

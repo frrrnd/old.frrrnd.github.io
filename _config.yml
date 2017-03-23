@@ -1,9 +1,7 @@
 # Site settings
 title: Fernando Soares
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  UI/UX Design & Front End em Florianópolis.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://127.0.0.1:400/" # the base hostname & protocol for your site

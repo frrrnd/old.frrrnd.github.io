@@ -5,4 +5,6 @@ subtitle: What I’m doing now
 permalink: /now/
 ---
 
-##What I’m doing now
+## O que estou fazendo agora
+
+Atualmente morando em Florianópolis e trabalhando na [Sábia Experience](http://sabia.com.br) como UX/UI Designer.

@@ -2,11 +2,16 @@
 layout: default
 ---
 <div class="wrapper">
-	{% include page/title.html %}
+<article>
+	<header class="article__header">
+		{% include page/title.html %}
+	</header>
 
-	{{ content }}
-
-	<!-- {% include page/explore.html %} -->
-
-	{% include footer.html %}
+	<div class="article__content">
+	        {{ content }}
+	    </div>
+</article>
+	
 </div>
+
+{% include footer.html %}
