@@ -1,0 +1,63 @@
+ @media (max-width: 800px) {
+//     /* =Base */
+
+	.header__top {
+		flex-wrap: wrap;
+	}
+
+    .logo__link {
+    	flex: 100%!important;
+    }
+
+//     p {
+//         font-size: 16px;
+//         line-height: 1.6;
+//     }
+
+//     .navigation,
+//     .social-links {
+//         @include centered-block();
+//     }
+
+//     .social-links {
+//         font-size: 30px;
+//         margin-top: 35px;
+//     }
+
+//     .page-title {
+//         margin-top: 80px;
+//         margin-bottom: 60px;
+//     }
+
+//     .page-title__text {
+//         font-size: 45px;
+//     }
+
+//     .page-title__subtitle {
+//         font-size: 18px;
+//     }
+
+//     .post-teaser__title {
+//         font-size: 18px;
+//         @include centered-block();
+//     }
+
+//     .post-teaser__date {
+//         font-size: 16px;
+//         margin-top: 10px;
+//         float: none;
+//         @include centered-block();
+//     }
+
+//     .explore {
+//         margin-top: 80px;
+//     }
+
+//     .post-title__text {
+//         font-size: 28px;
+//     }
+
+//     .post-title__subtitle {
+//         font-size: 18px;
+//     }
+ }

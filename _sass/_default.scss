@@ -106,64 +106,7 @@
     margin-top: 100px;
 }
 
-@media (max-width: 800px) {
-    /* =Base */
-    p {
-        font-size: 16px;
-        line-height: 1.6;
-    }
 
-    .wrapper {
-        width: 80%;
-    }
-
-    .navigation,
-    .social-links {
-        @include centered-block();
-    }
-
-    .social-links {
-        font-size: 30px;
-        margin-top: 35px;
-    }
-
-    .page-title {
-        margin-top: 80px;
-        margin-bottom: 60px;
-    }
-
-    .page-title__text {
-        font-size: 45px;
-    }
-
-    .page-title__subtitle {
-        font-size: 18px;
-    }
-
-    .post-teaser__title {
-        font-size: 18px;
-        @include centered-block();
-    }
-
-    .post-teaser__date {
-        font-size: 16px;
-        margin-top: 10px;
-        float: none;
-        @include centered-block();
-    }
-
-    .explore {
-        margin-top: 80px;
-    }
-
-    .post-title__text {
-        font-size: 28px;
-    }
-
-    .post-title__subtitle {
-        font-size: 18px;
-    }
-}
 
 .content p {
   font-family: 'Lora', serif;
