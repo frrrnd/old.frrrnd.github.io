@@ -2,12 +2,14 @@
 title: Fernando Soares
 description: >
   UI/UX Design & Front End em Florianópolis.
+cover: http://www.updateordie.com/wp-content/uploads/2017/03/gor-758x383.jpg
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://127.0.0.1:400/" # the base hostname & protocol for your site
 permalink: /:title/
 
 future: true
+lang: pt_BR
 
 author:
   fullname: Fernando Soares
@@ -17,7 +19,8 @@ author:
   instagram: ferspeak
   medium: frrrnd
   codepen: frrrnd
-  linkedin: 
+  linkedin:
+  googleplus: https://plus.google.com/u/0/+FernandoSoares0
   # disqus: your_disqus_forum_shortname
 
 # google_analytics: 'UA-XXXXXXXX-X'

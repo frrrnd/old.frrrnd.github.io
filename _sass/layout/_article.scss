@@ -62,15 +62,11 @@
 		p {
 			&:first-child {
 				&:first-letter {
-					float: left;
-				    margin-top: -6px;
-				    padding-right: 10px;
 				    color: #000;
-				    font-size: 101px;
-				    font-size: 10.1rem;
-				    line-height: 101px;
-				    line-height: 10.1rem;
+				    font-size: 3.5em;
 				    font-weight: bold;
+				    float: left;
+				    margin: -25px 5px 0 0;
 				}
 			}
 		}

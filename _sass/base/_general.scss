@@ -44,3 +44,8 @@ body {
 .content {
     padding-bottom: 2em;
 }
+
+::selection,
+::-moz-selection {
+    background-color: #bef6a8;
+}
