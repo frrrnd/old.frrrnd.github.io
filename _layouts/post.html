@@ -1,25 +1,20 @@
 ---
 layout: default
-comments: true
 ---
 <div class="wrapper">
-
-<article class="article__self">
-	<header class="article__header">
-		{% include post/title.html %}
-	</header>
+	<article class="article__self">
+		<header class="article__header">
+			{% include post/title.html %}
+		</header>
+			
+			<div class="article__content">
+		        {{ content }}
+		    </div>
 		
-		<div class="article__content">
-	        {{ content }}
-	    </div>
-	
-	<a href="" class="share--open"><i class="fa fa-hand-spock-o"></i></a>
-</article>
+		<span class="wave"></span>		
+	</article>
 
-
-
-{% include externals/disqus.html %}
-
+	{% include externals/disqus.html %}
 </div>
 {% include footer.html %}
 

@@ -3,19 +3,6 @@
 	border-top: 1px solid #eee;
 }
 
-.article__self {
-	i {
-		font-size: 30px;
-	}
-
-	.share--open {
-		color: #CCC;
-		display: block;
-		margin: 0 auto;
-		max-width: 35px;
-	}
-}
-
 .article__header {
 	width: 100%;
 	margin-bottom: 20px;
@@ -71,7 +58,35 @@
 	}
 }
 
+.article__self {
+	.article__content {
+		p {
+			&:first-child {
+				&:first-letter {
+					float: left;
+				    margin-top: -6px;
+				    padding-right: 10px;
+				    color: #000;
+				    font-size: 101px;
+				    font-size: 10.1rem;
+				    line-height: 101px;
+				    line-height: 10.1rem;
+				    font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
 .article__notes {
 	padding: 20px 0;
 	border-bottom: 1px solid #eee;
+}
+
+.wave {
+	display: block;
+	background: url('../images/wave.svg');
+	width: 80px;
+	height: 5px;
+	margin: 0 auto;
 }
