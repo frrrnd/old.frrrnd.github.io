@@ -1,9 +1,10 @@
 ---
 layout: default
+comments: true
 ---
 <div class="wrapper">
 
-<article>
+<article class="article__self">
 	<header class="article__header">
 		{% include post/title.html %}
 	</header>
@@ -11,9 +12,15 @@ layout: default
 		<div class="article__content">
 	        {{ content }}
 	    </div>
-	</div>
+	
+	<a href="" class="share--open"><i class="fa fa-hand-spock-o"></i></a>
 </article>
 
+
+
+{% include externals/disqus.html %}
+
+</div>
 {% include footer.html %}
 
 <!-- {% include post/about.html %}

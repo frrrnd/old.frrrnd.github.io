@@ -3,6 +3,19 @@
 	border-top: 1px solid #eee;
 }
 
+.article__self {
+	i {
+		font-size: 30px;
+	}
+
+	.share--open {
+		color: #CCC;
+		display: block;
+		margin: 0 auto;
+		max-width: 35px;
+	}
+}
+
 .article__header {
 	width: 100%;
 	margin-bottom: 20px;
