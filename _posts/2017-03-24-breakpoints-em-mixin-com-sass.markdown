@@ -13,7 +13,7 @@ Fazer sites responsivos não é uma tarefa fácil, a organização as vezes acab
 Criaremos 1 mixin com 3 condições em SASS para ser usado no elemento que for necessário: small para smartphones, medium para tablets, e large para computadores (os valores podem ser alterados como você achar melhor).
 
 Veja o mixin a seguir:
-{% highlight sass %}
+{% highlight css %}
 	@mixin breakpoint($name) {
 	  @if $name == “small” {
 	   @media (max-width: 767px) {
@@ -39,7 +39,7 @@ Tá bem fácil de entender.
 
 A aplicação do mixin é simples:
 
-{% highlight sass %}
+{% highlight css %}
 	.elemento {
 
 	  @include breakpoint(small) { 
