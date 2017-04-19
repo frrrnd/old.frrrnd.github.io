@@ -61,21 +61,6 @@
 	}
 }
 
-.article__self {
-	.article__content {
-		p {
-			&:first-child {
-				&:first-letter {
-				    color: #000;
-				    font-size: 3.5em;
-				    font-weight: bold;
-				    float: left;
-				    margin: -25px 5px 0 0;
-				}
-			}
-		}
-	}
-}
 
 .article__notes {
 	padding: 20px 0;

@@ -12,6 +12,15 @@ layout: default
 				</h2>
 			
 	        	<time datetime="{{ post.date | date: "%d/%m/%Y" }}" class="article__home--time">Em {{ post.date | date: "%d/%m/%Y" }}</time>
+				&bullet;
+				<span class="article__details__reading" title="Estimated read time">
+				  {% assign words = content | number_of_words %}
+				  {% if words < 360 %}
+				    1 min de leitura
+				  {% else %}
+				    {{ words | divided_by:180 }} mins de leitura
+				  {% endif %}
+				</span>
 			</header>
 
 	    	<div class="article__content">
