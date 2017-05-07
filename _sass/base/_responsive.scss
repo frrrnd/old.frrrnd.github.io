@@ -17,6 +17,10 @@
     	margin: 0 auto;
     }
 
+    .header__top h2 {
+      text-align: center;
+    }
+
     .header__about {
     	flex: 100%!important;
     	padding-left: 10px;
@@ -45,6 +49,14 @@
 
     .article__title {
         font-size: 3em!important;
+    }
+
+    .home-section {
+      padding: 0!important;
+
+      h2 {
+        padding-left: 25px;
+      }
     }
 
 //     p {
