@@ -1,6 +1,7 @@
 h1, h2 {
     margin: 0;
-    font-family: $heading-font;
+    font-weight: bold;
+    font-family: $text-font;
 }
 
 strong {
@@ -18,6 +19,7 @@ p {
 
 a {
 	color: $link-color;
+  font-weight: bold;
 }
 
 a {

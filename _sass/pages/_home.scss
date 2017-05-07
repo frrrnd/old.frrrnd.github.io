@@ -1,16 +1,9 @@
-.dribbble-shots {
-	background-color: #222;
-	padding: 1em 0;
-}
+.home-section {
+	padding: 4em 0;
 
-.see-more-dribbble {
-	padding: 10px;
-	color: #333;
-	text-align: right;
-	display: block;
-	margin: 0 auto;
-	width: 100%;
-	letter-spacing: 1px;
-	font-size: 15px;
-	font-family: monospace;
+	h2 {
+		font-family: $text-font;
+		font-size: 2.5em;
+		font-weight: bold;
+	}
 }

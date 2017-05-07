@@ -2,6 +2,38 @@
 	<div class="wrapper">
 		<p>Feito com <a target="_blank" href="https://jekyllrb.com">Jekyll</a> e <a target="_blank" href="https://github.com/frrrnd/my-blog">hospedado no Github</a>. Assine o <a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS Feed</a>.</p>
 		<p>© 2017 Copyright Fernando Soares. All rights reserved.</p>
-		<i>Fun creates more fun. Boring creates more boring.</i>
+		<div class="header__social">
+				<div class="social-links">
+						<ul>
+								{% if site.author.twitter %}
+								<li><a target="_blank" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								{% endif %}
+
+								{% if site.author.dribbble %}
+								<li><a target="_blank" href="https://dribbble.com/{{ site.author.dribbble }}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+								{% endif %}
+
+								{% if site.author.github %}
+								<li><a target="_blank" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+								{% endif %}
+
+								{% if site.author.instagram %}
+								<li><a target="_blank" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								{% endif %}
+
+								{% if site.author.medium %}
+								<li><a target="_blank" href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+								{% endif %}
+
+								{% if site.author.codepen %}
+								<li><a target="_blank" href="https://codepen.io/{{ site.author.codepen }}"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+								{% endif %}
+
+								{% if site.author.linkedin %}
+								<li><a target="_blank" href="https://linkedin.com/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								{% endif %}
+						</ul>
+				</div>
+		</div>
 	</div>
 </footer>

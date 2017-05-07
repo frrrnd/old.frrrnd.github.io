@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="header__top">
             <a class="logo__link" href="/">
-                <img class="logo__image" src="../assets/images/frrrnd-logo.svg">
+                <h2>Fernando Soares</h2>
             </a>
 
             <div class="header__nav">
@@ -12,46 +12,6 @@
                     <li><a href="{{ '/now/' | prepend: site.baseurl }}">Now</a></li>
                     <li><a href="{{ '/contato/' | prepend: site.baseurl }}">Contato</a></li>
                 </ul>
-            </div>
-        </div>
-
-        <div class="header__bottom">
-            <div class="header__about">
-                <p>Fernando Soares é ux/ui designer & front end designer que ama HTML semântico, CSS, Javascript e interfaces.</p>
-            </div>
-
-            <div class="header__social">
-                <div class="social-links">
-                    <ul>
-                        {% if site.author.twitter %}
-                        <li><a target="_blank" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        {% endif %}
-
-                        {% if site.author.dribbble %}
-                        <li><a target="_blank" href="https://dribbble.com/{{ site.author.dribbble }}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                        {% endif %}
-                        
-                        {% if site.author.github %}
-                        <li><a target="_blank" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        {% endif %}
-                        
-                        {% if site.author.instagram %}
-                        <li><a target="_blank" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        {% endif %}
-                        
-                        {% if site.author.medium %}
-                        <li><a target="_blank" href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-                        {% endif %}
-
-                        {% if site.author.codepen %}
-                        <li><a target="_blank" href="https://codepen.io/{{ site.author.codepen }}"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-                        {% endif %}
-                        
-                        {% if site.author.linkedin %}
-                        <li><a target="_blank" href="https://linkedin.com/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        {% endif %}
-                    </ul>
-                </div>
             </div>
         </div>
     </div>

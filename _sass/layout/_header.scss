@@ -1,10 +1,9 @@
 .header {
-	padding: 4em 0;
+	padding: 2em 0;
 	width: 100%;
   min-height: 200px;
   height: 100%;
-	background-color: #111;
-	color: #fff;
+	color: #333;
 }
 
 .header__top {
@@ -13,6 +12,13 @@
 
 	.logo__link {
 		flex: 50%;
+	}
+
+	h2 {
+		font-weight: bold;
+		font-size: 20px;
+		color: #666;
+		padding-top: 10px;
 	}
 }
 
@@ -55,7 +61,6 @@
 .social-links {
 	width: 100%;
 	display: flex;
-
 
 	ul {
 		display: flex;
