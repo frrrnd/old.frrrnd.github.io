@@ -1,7 +1,7 @@
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -9,6 +9,8 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    border: 20px solid $site-color-border;
+    min-height: 100%;
 }
 
 body {
@@ -25,6 +27,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
+    height: 100%;
 
     a {
         cursor: url(../images/active.png), auto;

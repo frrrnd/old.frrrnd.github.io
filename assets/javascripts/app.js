@@ -15,8 +15,4 @@ function shuffle(array) {
   return array[0];
 }
 
-// function getRandomEmoji(list) {
-//   return list[Math.floor(list.length * Math.random())];
-// }
-
 document.getElementById("emoji").innerHTML = shuffle(list);
