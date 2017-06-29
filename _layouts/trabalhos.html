@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="wrapper">
+	<article class="article__self">
+		<header class="article__header">
+			{% include page/title.html %}
+		</header>
+			
+        <div class="article__content">
+            {{ content }}
+        </div>
+	</article>
+
+    <div class="wrapper lab">
+        <h3>Experimentos</h3>
+
+        <article class="pen">
+            <p data-height="362" data-theme-id="light" data-slug-hash="NgXdpG" data-default-tab="result" data-user="frrrnd" data-embed-version="2" data-pen-title="Loading Animation" class="codepen">See the Pen <a href="https://codepen.io/frrrnd/pen/NgXdpG/">Loading Animation</a> by Fernando Soares (<a href="https://codepen.io/frrrnd">@frrrnd</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+        </article>
+    </div>
+
+	{% include externals/disqus.html %}
+</div>
+
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+{% include footer.html %}

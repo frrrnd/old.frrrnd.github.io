@@ -19,7 +19,10 @@ sitemap:
     "layout/footer",
     "components/dribbble",
     "components/font-awesome",
-    "default",
     "pages/404",
     "pages/home",
     "components/loading";
+
+::selection {
+    background-color: #bef6a8;
+}
