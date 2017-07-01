@@ -13,15 +13,47 @@
 	margin-bottom: 60px;
 	font-size: 3em;
 	margin-bottom: 10px;
+	font-family: $heading-font;
 
 	a {
 		color: $text-color;
+		position: relative;
+
+		&:hover {
+			&:after {
+				content: "";
+				width: 40px;
+				height: 40px;
+				position: absolute;
+				top: 30%;
+				right: -50px;
+				background: url("../images/arrow-right.svg") no-repeat right;
+				animation: .3s title-hover forwards;
+			}
+		}
 	}
 
 	&--notes {
 		font-size: 3em;
 		border-bottom: none;
 	}
+}
+
+@keyframes title-hover {
+	0% {
+		transform: translateX(0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(20px);
+		opacity: 1;
+	}
+}
+
+.article__home--time,
+.article__details__reading {
+	font-family: $menu-font;
 }
 
 .article__details {

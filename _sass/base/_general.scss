@@ -11,6 +11,7 @@ html {
     -webkit-text-size-adjust: 100%;
     border: 20px solid $site-color-border;
     min-height: 100%;
+    background-color: #FFF;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
+    min-height: 95vh;
     height: 100%;
 
     a {
