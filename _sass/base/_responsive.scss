@@ -1,5 +1,21 @@
+/*
+@TODO - Refatorar
+*/
  @media (max-width: 800px) {
-//     /* =Base */
+
+   html {
+     border: none;
+   }
+
+   .header__nav {
+      overflow-x: scroll;
+      padding-left: 60px;
+      -webkit-overflow-scrolling: touch;
+
+      ul {
+        padding-right: 10px;
+      }
+   }
 
 	.header__top {
 		flex-wrap: wrap;

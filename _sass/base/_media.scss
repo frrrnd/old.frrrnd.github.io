@@ -8,3 +8,13 @@ img {
 	max-width: 100%;
 	border: none;
 }
+
+.rounded-image {
+	margin-bottom: 20px;
+	
+	img {
+		max-width: 240px;
+		width: 100%;
+		border-radius: 100%;
+	}
+}

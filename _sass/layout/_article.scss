@@ -22,11 +22,11 @@
 		&:hover {
 			&:after {
 				content: "";
-				width: 40px;
-				height: 40px;
+				width: 20px;
+				height: 20px;
 				position: absolute;
-				top: 30%;
-				right: -50px;
+				top: 40%;
+				right: -30px;
 				background: url("../images/arrow-right.svg") no-repeat right;
 				animation: .3s title-hover forwards;
 			}
@@ -58,6 +58,7 @@
 
 .article__details {
 	color: #999;
+	font-family: $menu-font;
 }
 
 .article__details__time,
