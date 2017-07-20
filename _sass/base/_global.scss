@@ -6,17 +6,17 @@
 $wrapper-width: 50em;
 
 /* Typo */
-$menu-font: 'Yantramanav', 'Helvetica', Arial, sans-serif;
-$heading-font: 'Playfair Display', serif;
+$menu-font: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$heading-font: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $text-font: 'Georgia', sans-serif;
 
 /* Colors */
-$text-color: #383452;
-$background-color: #eee;
+$text-color: #333;
+$background-color: #fff;
 $link-color: #d63030;
 $link-color-social: #999;
-$link-color-menu: #333;
-$site-color-border: #FFF;
+$link-color-menu: #666;
+$site-color-border: #eee;
 
 /* Mixins */
 

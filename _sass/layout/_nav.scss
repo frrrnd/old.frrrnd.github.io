@@ -13,13 +13,13 @@
 		position: relative;
 	    display: inline-block;
 	    margin: 0 10px;
-	    font-size: 14px;
+	    font-size: 12px;
 		font-family: $menu-font;
 	    text-transform: uppercase;
 	    letter-spacing: 1px;
 
 	    a {
-	      color: #AAA;
+	      color: $link-color-menu;
 	    }
 	}
 }

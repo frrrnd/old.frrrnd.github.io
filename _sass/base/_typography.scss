@@ -1,7 +1,6 @@
 h1, h2 {
     margin: 0;
     font-weight: bold;
-    font-family: $text-font;
 }
 
 strong {
@@ -11,9 +10,8 @@ strong {
 
 p {
 	margin: 0;
-	line-height: 1.8;
-    font-size: 20px;
-    font-family: $text-font;
+	line-height: 1.6;
+    font-size: 18px;
 }
 
 a {
