@@ -7,13 +7,8 @@
      border: none;
    }
 
-   .header__nav {
-      overflow-x: scroll;
-      -webkit-overflow-scrolling: touch;
-
-      ul {
-        padding-right: 10px;
-      }
+   body {
+     padding: 0 20px;
    }
 
 	.header__top {
@@ -54,10 +49,6 @@
     	padding: 10px;
     }
 
-    .footer .wrapper {
-    	padding: 10px;
-    }
-
     .shots--shot {
     	width: 50%!important;
     }
@@ -68,10 +59,10 @@
 
     .home-section {
       padding: 0!important;
+    }
 
-      h2 {
-        padding-left: 25px;
-      }
+    .header__nav__menu {
+      padding-left: 10px!important;
     }
 
 //     p {
