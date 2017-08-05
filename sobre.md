@@ -1,16 +1,11 @@
 ---
-layout: page
+layout: sobre
 title: Sobre
 subtitle: 
 permalink: /sobre/
 ---
 
 Olá!
-
-<div class="rounded-image">
-    <img src="/assets/images/eu.jpg" alt="Eu :D">
-</div>
-<!-- ¯\_(ツ)_/¯ -->
 
 Meu nome é Fernando Soares, tenho 26 anos e moro em Florianópolis.
 

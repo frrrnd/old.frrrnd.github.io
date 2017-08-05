@@ -1,0 +1,19 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    border-top: 2px solid rgba(0, 0, 0, .1);
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+    background-color: #f9f9f9;
+    padding: 2em 0;
+    margin: 2em 0;
+
+    &__left {
+        flex: 50;
+        text-align: left;
+    }
+
+    &__right {
+        flex: 50;
+        text-align: right;
+    }
+}

@@ -1,65 +1,13 @@
 .footer {
-	color: #666;
+	width: 100%;
 	padding: 2em 0;
-
-	i {
-		transition: .4s;
-	}
+	background-color: $background-color;
 
 	p {
-		font-size: 14px;
-		font-family: $menu-font;
-	}
-
-	.twitter {
-		i:hover {
-			color: #21abf4;
-		}
-	}
-
-	.dribbble {
-		i:hover {
-			color: #ed5694;
-		}
-	}
-
-	.github {
-		i:hover {
-			color: #333;
-		}
-	}
-
-	.instagram {
-		i:hover {
-			background: linear-gradient(-135deg,#1400c8,#b900b4,#f50000);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-	}
-
-	.medium {
-		i:hover {
-			color: #08b77b;
-		}
-	}
-
-	.codepen {
-		i:hover {
-			color: #333;
-		}
-	}
-
-	.linkedin {
-		i:hover {
-			color: #0282bd;
-		}
-	}
-
-	i {
 		width: 100%;
-		text-align: right;
-		color: $link-color-social;
-		display: block;
+		text-align: center;
+		font-size: 12px;
+		font-family: $menu-font;
 	}
 }
 

@@ -1,39 +1,37 @@
 <footer class="footer">
 	<div class="wrapper">
-		<p>Feito com <a target="_blank" href="https://jekyllrb.com">Jekyll</a> e <a target="_blank" href="https://github.com/frrrnd/frrrnd.github.io">hospedado no Github</a>.</p>
-		<p>© 2017 Copyright Fernando Soares. All rights reserved.</p>
-		<div class="footer__social">
-				<div class="social-links">
-						<ul>
-								{% if site.author.twitter %}
-								<li><a class="twitter" target="_blank" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								{% endif %}
+		<div class="social-links">
+      <ul>
+        {% if site.author.twitter %}
+        <li><a class="twitter" target="_blank" href="https://twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        {% endif %}
 
-								{% if site.author.dribbble %}
-								<li><a class="dribbble" target="_blank" href="https://dribbble.com/{{ site.author.dribbble }}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								{% endif %}
+        {% if site.author.dribbble %}
+        <li><a class="dribbble" target="_blank" href="https://dribbble.com/{{ site.author.dribbble }}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+        {% endif %}
 
-								{% if site.author.github %}
-								<li><a class="github" target="_blank" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-								{% endif %}
+        {% if site.author.github %}
+        <li><a class="github" target="_blank" href="https://github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        {% endif %}
 
-								{% if site.author.instagram %}
-								<li><a class="instagram" target="_blank" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								{% endif %}
+        {% if site.author.instagram %}
+        <li><a class="instagram" target="_blank" href="https://instagram.com/{{ site.author.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        {% endif %}
 
-								{% if site.author.medium %}
-								<li><a class="medium" target="_blank" href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-								{% endif %}
+        {% if site.author.medium %}
+        <li><a class="medium" target="_blank" href="https://medium.com/@{{ site.author.medium }}"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+        {% endif %}
 
-								{% if site.author.codepen %}
-								<li><a class="codepen" target="_blank" href="https://codepen.io/{{ site.author.codepen }}"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
-								{% endif %}
+        {% if site.author.codepen %}
+        <li><a class="codepen" target="_blank" href="https://codepen.io/{{ site.author.codepen }}"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+        {% endif %}
 
-								{% if site.author.linkedin %}
-								<li><a class="linkedin" target="_blank" href="https://linkedin.com/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								{% endif %}
-						</ul>
-				</div>
-		</div>
+        {% if site.author.linkedin %}
+        <li><a class="linkedin" target="_blank" href="https://linkedin.com/{{ site.author.linkedin }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        {% endif %}
+      </ul>
+    </div>
+		<p>© 2017 - Fernando Soares</p>
+		<p><a href="https://github.com/frrrnd/frrrnd.github.io" target="_blank">Code Here</a></p>
 	</div>
 </footer>

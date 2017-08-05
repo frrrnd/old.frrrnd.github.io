@@ -5,8 +5,9 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: 0;
 
-	@for $i from 1 to 10 {
+	@for $i from 1 to 13 {
 		.shots--reveal:nth-child(#{$i}) {
 			animation: reveal .8s forwards;
 			animation-delay: $i * 0.25s;
@@ -15,14 +16,8 @@
 
 	&--shot {
 		display: inline-block;
-		width: 50%;
-		padding: 0 10px;
-		margin-bottom: 20px;
+		flex: 25%;
 		opacity: 0;
-
-		img {
-			border-radius: 3px;
-		}
 	}
 }
 

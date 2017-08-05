@@ -8,20 +8,37 @@ sitemap:
 
 <section class="home-section hero">
   <div class="wrapper">
-    <h2>Fernando é ux/ui & front end designer que ama HTML semântico, CSS e interfaces.</h2>
+    <h2>Fernando é <span>ux/ui & front end designer</span> que ama HTML semântico, CSS e interfaces.</h2>  
+    
+    <figure class="home-image">
+        <img src="/assets/images/jeremy-bishop-151467.jpg" alt="Photo by Jeremy Bishop">
+    </figure>
   </div>
 </section>
 
-<!-- <section class="home-section works">
+<section class="home-section">
   <div class="wrapper">
-    <h3>Works</h3>
-    <ul class="shots">
-    </ul>
+    <h3>Shots</h3>
+    <ul class="shots"></ul>
   </div>
-</section> -->
+</section>
+
 
 <!-- <section class="home-section">
   <div class="wrapper">
-    <h3>Teste</h3>
+    <h3>Notes</h3>
+    <ul class="notes__list">
+      {% for post in site.posts limit:5  %}
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<time datetime="{{ post.date | date: "%d/%m/%Y" }}">{{ post.date | date: "%d/%m/%Y" }}</time></a></li>
+      {% endfor %}
+    </ul>
   </div>
-</section> -->
+</section> 
+
+ <section class="home-section">
+  <div class="wrapper">
+    <h3>Works</h3>
+
+    <ul class="shots"></ul>
+  </div>
+</section>  -->

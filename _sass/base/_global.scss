@@ -3,20 +3,22 @@
 */
 
 /* General */
-$wrapper-width: 50em;
+$wrapper-width: 70em;
 
 /* Typo */
+//$menu-font: 'Vollkorn', serif;
 $menu-font: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$heading-font: -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$heading-font:'Vollkorn', serif;
 $text-font: 'Georgia', sans-serif;
 
 /* Colors */
 $text-color: #333;
 $background-color: #fff;
-$link-color: #d63030;
+$link-color: #ff4242;
 $link-color-social: #999;
-$link-color-menu: #666;
+$link-color-menu: #aaa;
 $site-color-border: #eee;
+$wave-fill: #FFF;
 
 /* Mixins */
 

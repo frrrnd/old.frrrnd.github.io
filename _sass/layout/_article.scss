@@ -72,6 +72,11 @@
 */
 
 .article__content {
+	padding-top: 1em;
+
+	h2 {
+		margin-bottom: 20px;
+	}
 	p {
 		margin-bottom: 30px;
 	}
@@ -104,4 +109,8 @@
 	width: 30px;
 	margin: 0 auto;
 	font-size: 25px;
+}
+
+.article__self {
+	padding-top: 2em;
 }

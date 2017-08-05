@@ -6,12 +6,13 @@
 
         {% include externals/styling.html %}
     </head>
-    <body>
+    <body {% if page.layout %} class="layout-{{ page.layout }}"{% endif %}>
+        {% include header.html %}
         <main class="main">
-            {% include header.html %}
 
             {{ content }}
         </main>
+        {% include footer.html %}
 
         {% include externals/scripting.html %}
         {% include externals/google_analytics.html %}

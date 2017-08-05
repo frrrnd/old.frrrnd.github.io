@@ -5,7 +5,7 @@ description: >
 cover: http://www.updateordie.com/wp-content/uploads/2017/03/gor-758x383.jpg
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://127.0.0.1:400/" # the base hostname & protocol for your site
+url: "http://frrrnd.design" # the base hostname & protocol for your site
 permalink: /:title/
 
 future: true
