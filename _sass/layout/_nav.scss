@@ -32,14 +32,14 @@
 				height: 2px;
 				background-color: $link-color-menu;
 				position: absolute;
-				top: 50%;
+				top: 65%;
 				right: 0;
 				display: block;
 				transition: .4s;
 			}
 
 			&:hover {
-				color: #fff;
+				color: rebeccapurple;
 				transition: .4s;
 
 				&:before {
