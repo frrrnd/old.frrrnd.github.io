@@ -1,0 +1,13 @@
+@mixin breakpoint($name) {
+    @if $name == “small” {
+        @media (max-width: 1024px) {
+            @content;
+        }
+}
+
+    @else $name == “large” { 
+        @media (min-width: 1025px) { 
+            @content; 
+        }
+    }
+}
