@@ -4,32 +4,36 @@ layout: default
 
 <div class="wrapper">
 	<section class="articles__list">
-		{% for post in site.posts %}
-		<article class="article__notes">
-			<header class="article__header">
-				<h2 class="article__title article__title--notes">
-					<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				</h2>
-			
-	        	<time datetime="{{ post.date | date: "%d/%m/%Y" }}" class="article__home--time">Em {{ post.date | date: "%d/%m/%Y" }}</time>
-				&bullet;
-				<span class="article__details__reading" title="Estimated read time">
-				  {% assign words = content | number_of_words %}
-				  {% if words < 360 %}
-				    1 min de leitura
-				  {% else %}
-				    {{ words | divided_by:180 }} mins de leitura
-				  {% endif %}
-				</span>
-			</header>
+	{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-	    	<div class="article__content">
-	            {{ post.excerpt }}
-	            <a href="{{ post.url }}">Leia o post completo &raquo;</a>
-	        </div>
-		</article>
-		{% endfor %}
+    {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+    {% endif %}
+
+			<article class="article__notes">
+				<h2 class="article__title article__title--notes"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				<time datetime="{{ post.date | date: "%d/%m/%Y" }}" class="article__home--time">Em {{ post.date | date: "%d/%m/%Y" }}</time>
+				<span class="article__details__reading" title="Estimated read time">
+						{% assign words = content | number_of_words %}
+						{% if words < 360 %}
+							1 min de leitura
+						{% else %}
+							{{ words | divided_by:180 }} mins de leitura
+						{% endif %}
+				</span>
+			</article>
+
+    {% if forloop.last %}
+
+    {% else %}
+        {% if this_year != next_year %}
+
+        <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+
+        {% endif %}
+    {% endif %}
+	{% endfor %}
 	</section>
 </div>
-
-{% include footer.html %}

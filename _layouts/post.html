@@ -1,11 +1,17 @@
 ---
 layout: default
+medium: false
+medium_link:
 ---
 <div class="wrapper">
 	<article class="article__self">
 		<header class="article__header">
 			{% include post/title.html %}
 		</header>
+
+		{% if page.medium_link %}
+		<p><a class="post-medium" target="_blank" href="{{page.medium_link}}">Esse post foi publicado também no medium!</a></p>
+		{% endif %}
 			
 			<div class="article__content">
 		        {{ content }}
@@ -16,8 +22,6 @@ layout: default
 				<li><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{page.title}}" data-size="large">Tweet</a></li>
 			</ul>
 		</div>
-		
-		<span class="wave" id="emoji"></span>
 
 		<div class="pagination">
 			{% if page.previous.url %}

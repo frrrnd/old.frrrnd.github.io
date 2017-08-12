@@ -15,9 +15,8 @@
 	    display: inline-block;
 	    margin: 0 20px 0 0;
 	    font-size: 18px;
-		font-family: $menu-font;
+		font-family: $text-font;
 		text-transform: lowercase;
-		letter-spacing: 2px;
 
 	    a {
 		  	color: $link-color-menu;
@@ -30,7 +29,7 @@
 				height: 2px;
 				background-color: $link-color-menu;
 				position: absolute;
-				top: 65%;
+				bottom: 0;
 				right: 0;
 				display: block;
 				transition: .4s;

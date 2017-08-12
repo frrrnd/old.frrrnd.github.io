@@ -1,6 +1,5 @@
 .articles__list {
 	padding-top: 2em;
-	border-top: 1px solid #eee;
 	max-width: 700px;
 	width: 100%;
 	margin: 0 auto;
@@ -13,7 +12,6 @@
 
 .article__title {
 	width: 100%;
-	margin-bottom: 60px;
 	font-size: 3em;
 	margin-bottom: 10px;
 	font-family: $heading-font;
@@ -21,24 +19,11 @@
 	a {
 		color: $text-color;
 		position: relative;
-
-		&:hover {
-			&:after {
-				content: "";
-				width: 20px;
-				height: 20px;
-				position: absolute;
-				top: 40%;
-				right: -30px;
-				background: url("../images/arrow-right.svg") no-repeat right;
-				animation: .3s title-hover forwards;
-			}
-		}
 	}
 
 	&--notes {
-		font-size: 3em;
-		border-bottom: none;
+		font-size: 2em;
+		font-weight: normal;
 	}
 }
 
@@ -56,12 +41,12 @@
 
 .article__home--time,
 .article__details__reading {
-	font-family: $menu-font;
+	font-family: $text-font;
 }
 
 .article__details {
 	color: #999;
-	font-family: $menu-font;
+	font-family: $text-font;
 }
 
 .article__details__time,
@@ -119,4 +104,13 @@
 	max-width: 700px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.post-medium {
+	color: green;
+	font-size: 13px;
+}
+
+.article__self a[target^="_blank"]:after {
+     content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);    
 }

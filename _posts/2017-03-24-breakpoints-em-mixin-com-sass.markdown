@@ -6,6 +6,7 @@ date: 2017-03-24 16:48:01
 categories: notes
 comments: true
 postimage: https://tableless.com.br/wp-content/uploads/2013/06/sass.jpg
+medium_link: https://medium.com/cmdundo/breakpoints-em-mixin-com-sass-8e10cafabc2c
 ---
 
 Fazer sites responsivos não é uma tarefa fácil, a organização as vezes acaba sendo um inimigo para o desenvolvimento e a manutenção. Por isso, o desenvolvedor sempre procura um método ou técnica pra facilitar esses serviços. Trago aqui uma dica pra quem se perde em meio a media queries e ajustes responsivos.
