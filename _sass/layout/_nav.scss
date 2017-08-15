@@ -26,7 +26,7 @@
 		 	&:before {
 				content: "";
 				width: 100%;
-				height: 2px;
+				height: 1px;
 				background-color: $link-color-menu;
 				position: absolute;
 				bottom: 0;
@@ -36,7 +36,7 @@
 			}
 
 			&:hover {
-				color: rebeccapurple;
+				color: $link-color;
 				transition: .4s;
 
 				&:before {

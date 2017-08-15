@@ -10,6 +10,12 @@ html {
     -webkit-text-size-adjust: 100%;
     min-height: 100%;
     background-color: $background-color;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+    &.active {
+        opacity: 1;
+    }
 }
 
 body {
