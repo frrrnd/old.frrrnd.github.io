@@ -1,54 +1,21 @@
 .home-section {
 	width: 100%;
+	animation: .8s toUp 1s forwards;
+	opacity: 0;
 
-	h2 {
+	
+	h1 {
 		font-weight: normal;
 		width: 100%;
-		padding-top: 2em;
-		font-family: $heading-font;
-		font-size: 2em;
+		font-size: 1.5em;
 		color: #333;
-		animation: .8s toUp 1s forwards;
-		opacity: 0;
-		margin: 1em 0 6em 0;
+		margin: 2em 0 6em 0;
+		max-width: 70%;
+		width: 100%;
 
 		span {
-			display: inline-block;
-			position: relative;
-			z-index: 2;
-
-
-			&:before {
-				content: "";
-				display: inline-block;
-				height: 5px;
-				background: linear-gradient(to right, #243ab7 0%,#2feded 100%);
-				z-index: -1;
-				position: absolute;
-				top: 70%;
-				left: 0;
-				animation: .6s growUp 2s forwards;
-			}
+			font-weight: bold;
 		}
-	}
-
-	&--about {
-		color: #fff;
-		padding: 5em 0;
-
-		p {
-			margin-bottom: 15px;
-		}
-	}
-}
-
-@keyframes growUp {
-	0% {
-		width: 0;
-	}
-
-	100% {
-		width: 100%;
 	}
 }
 
@@ -141,4 +108,11 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.home-works {
+	.wrapper {
+		border-top: 1px solid #eee;
+		padding-top: 3em;
+	}
 }

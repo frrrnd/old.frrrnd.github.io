@@ -1,7 +1,8 @@
 .header {
 	width: 100%;
-	padding-top: 1em;
+	padding: 1em 0;
 	margin-bottom: 20px;
+	border-bottom: 1px solid #eee;
 }
 
 .header__top {
@@ -24,11 +25,14 @@
 		}
 
 		h2 {
-			font-weight: normal;
-			font-size: 20px;
-			color: $link-color;
-			padding: 40px 10px 10px 0;
-			font-family: $heading-font;
+			font-size: 1.5em;
+			color: #333;
+			padding: 0;
+			font-weight: 400;
+
+			a {
+				color: inherit;
+			}
 		}
 	}
 }
