@@ -89,8 +89,7 @@
 
 .article__notes {
 	padding: 20px 0;
-	border-bottom: 1px solid #eee;
-	margin-bottom: 8em;
+	margin-bottom: 1em;
 }
 
 .wave {
@@ -114,4 +113,9 @@
 
 .article__self a[target^="_blank"]:after {
      content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);    
+}
+
+.byYear {
+	color: $link-color;
+	margin-top: 2em;
 }
