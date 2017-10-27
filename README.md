@@ -1,6 +1,8 @@
 # frrrnd.design
 
-<img src="https://github.com/frrrnd/frrrnd.github.io/blob/master/screenshot.png" align="center" alt="Screenshot">
+<p align="center">
+    <img src="https://github.com/frrrnd/frrrnd.github.io/blob/master/screenshot.png" width="694" alt="Screenshot">
+</p>
 
 
 > Esse site/blog/portfolio foi feito com Jekyll e será sempre atualizado conforme necessidade (eu espero).
