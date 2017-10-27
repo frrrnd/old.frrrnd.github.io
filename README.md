@@ -1,6 +1,7 @@
 # frrrnd.design
 
-![screen](https://github.com/frrrnd/frrrnd.github.io/blob/master/screenshot.png)
+<img src="https://github.com/frrrnd/frrrnd.github.io/blob/master/screenshot.png" align="center" alt="Screenshot">
+
 
 > Esse site/blog/portfolio foi feito com Jekyll e será sempre atualizado conforme necessidade (eu espero).
 
@@ -8,9 +9,9 @@
 
 ### TODO
 
-<input type="checkbox"/> <label>Acabar o about com mais informações</label>
+- [ ] Acabar o about com mais informações
 
-<input type="checkbox"/> <label>Incluir projetos na página Trabalhos</label>
+- [ ] Incluir projetos na página Trabalhos
 
 ### Licença
 
