@@ -1,0 +1,46 @@
+<svg width="168" height="159" viewBox="0 0 168 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-239 -483)">
+<g id="Group 4">
+<g id="Ellipse 3">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(310.099 550)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(310.099 550)" fill="#F52D3A"/>
+</g>
+</g>
+<g id="Ellipse 2">
+<mask id="mask1_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="translate(293.099 483)"/>
+</mask>
+<g mask="url(#mask1_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="translate(293.099 483)" fill="#F52D3A"/>
+</g>
+</g>
+<g id="Ellipse 2.1">
+<mask id="mask2_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="matrix(0.5 -0.866025 0.866025 0.5 239 548.298)"/>
+</mask>
+<g mask="url(#mask2_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="matrix(0.5 -0.866025 0.866025 0.5 239 548.298)" fill="#F52D3A"/>
+</g>
+</g>
+<g id="Ellipse 2.2">
+<mask id="mask3_outline_ins">
+<use xlink:href="#path2_fill" fill="white" transform="matrix(-0.5 -0.866025 0.866025 -0.5 268.5 627.798)"/>
+</mask>
+<g mask="url(#mask3_outline_ins)">
+<use xlink:href="#path3_stroke_2x" transform="matrix(-0.5 -0.866025 0.866025 -0.5 268.5 627.798)" fill="#F52D3A"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 26 13C 26 20.1797 20.1797 26 13 26C 5.8203 26 0 20.1797 0 13C 0 5.8203 5.8203 0 13 0C 20.1797 0 26 5.8203 26 13Z"/>
+<path id="path1_stroke_2x" d="M 23 13C 23 18.5228 18.5228 23 13 23L 13 29C 21.8366 29 29 21.8366 29 13L 23 13ZM 13 23C 7.47715 23 3 18.5228 3 13L -3 13C -3 21.8366 4.16344 29 13 29L 13 23ZM 3 13C 3 7.47715 7.47715 3 13 3L 13 -3C 4.16344 -3 -3 4.16344 -3 13L 3 13ZM 13 3C 18.5228 3 23 7.47715 23 13L 29 13C 29 4.16344 21.8366 -3 13 -3L 13 3Z"/>
+<path id="path2_fill" d="M 59 79.5C 59 123.407 45.7924 159 29.5 159C 13.2076 159 0 123.407 0 79.5C 0 35.5934 13.2076 0 29.5 0C 45.7924 0 59 35.5934 59 79.5Z"/>
+<path id="path3_stroke_2x" d="M 56 79.5C 56.0102 101.207 52.7989 120.557 47.547 134.671C 44.9605 141.664 42.053 147.011 38.7276 150.774C 35.5206 154.429 32.3944 156 29.5 156L 29.5 162C 34.7518 162 39.3862 159.121 43.2379 154.731C 46.9711 150.448 50.4204 144.152 53.1723 136.759C 58.5973 122.099 61.9898 101.7 62 79.5L 56 79.5ZM 29.5 156C 26.6056 156 23.4794 154.429 20.2724 150.774C 16.947 147.011 14.0395 141.664 11.453 134.671C 6.20109 120.557 2.98984 101.207 3 79.5L -3 79.5C -2.98984 101.7 0.402711 122.099 5.82774 136.759C 8.57961 144.152 12.0289 150.448 15.7621 154.731C 19.6138 159.121 24.2482 162 29.5 162L 29.5 156ZM 3 79.5C 2.98984 57.7933 6.20109 38.4428 11.453 24.3287C 14.0395 17.3356 16.947 11.9889 20.2724 8.22596C 23.4794 4.5705 26.6056 3 29.5 3L 29.5 -3C 24.2482 -3 19.6138 -0.121335 15.7621 4.26905C 12.0289 8.55195 8.57961 14.8478 5.82774 22.2413C 0.402711 36.9005 -2.98984 57.3 -3 79.5L 3 79.5ZM 29.5 3C 32.3944 3 35.5206 4.5705 38.7276 8.22596C 42.053 11.9889 44.9605 17.3356 47.547 24.3287C 52.7989 38.4428 56.0102 57.7933 56 79.5L 62 79.5C 61.9898 57.3 58.5973 36.9005 53.1723 22.2413C 50.4204 14.8478 46.9711 8.55195 43.2379 4.26905C 39.3862 -0.121335 34.7518 -3 29.5 -3L 29.5 3Z"/>
+</defs>
+</svg>

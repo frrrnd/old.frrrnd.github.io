@@ -1,13 +1,29 @@
-@mixin breakpoint($name) {
-    @if $name == “small” {
-        @media (max-width: 1024px) {
-            @content;
-        }
-}
+$screen-small: 1024px;
+$screen-large: 1025px;
 
-    @else $name == “large” { 
-        @media (min-width: 1025px) { 
-            @content; 
-        }
+
+@mixin small {
+    @media (max-width: $screen-small) {
+        @content;
     }
 }
+
+@mixin large {
+    @media (min-width: $screen-large) {
+        @content;
+    }
+}
+
+// @mixin breakpoint($name) {
+//     @if $name == small {
+//         @media (max-width: 1024px) {
+//             @content;
+//         }
+//     }
+
+//     @else $name == large { 
+//         @media (min-width: 1025px) {
+//             @content;
+//         }
+//     }
+// }

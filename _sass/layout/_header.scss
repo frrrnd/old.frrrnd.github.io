@@ -2,37 +2,22 @@
 	width: 100%;
 	padding: 1em 0;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #eee;
 }
 
 .header__top {
 	width: 100%;
 	display: flex;
-
+	align-items: center;
 	.logo__link {
 		flex: 50%;
 		display: inline-block;
 		text-align: left;
 		color: #333;
+		font-weight: bold;
+		font-size: 36px;
 
-		svg {
-			max-width: 42px;
-			width: 100%;
-
-			path {
-				fill: $wave-fill;
-			}
-		}
-
-		h2 {
-			font-size: 1.5em;
+		a {
 			color: #333;
-			padding: 0;
-			font-weight: 400;
-
-			a {
-				color: inherit;
-			}
 		}
 	}
 }
@@ -47,12 +32,10 @@
 	max-width: 600px;
 	display: flex;
 	flex-direction: column;
-
 	.logo {
 		color: #333;
 		font-weight: bold;
 	}
-
 	p {
 		width: 100%;
 		display: block;
@@ -62,7 +45,6 @@
 		padding: 2em 0;
 		font-family: $heading-font;
 	}
-
 	&:hover p strong {
 		//animation: glitch 2s steps(100) infinite;
 	}
@@ -71,7 +53,6 @@
 .social-links {
 	width: 100%;
 	display: flex;
-
 	ul {
 		display: flex;
 		flex-direction: row;
@@ -82,11 +63,9 @@
 		padding: 0;
 		list-style-type: none;
 	}
-
 	li {
 		font-size: 25px;
 		margin: 10px;
-
 		a {
 			color: $link-color-social;
 		}

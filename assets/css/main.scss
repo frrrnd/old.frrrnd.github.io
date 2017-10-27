@@ -9,7 +9,7 @@ sitemap:
     "base/global",
     "base/normalize",
     "base/general",
-    "utils/mixins",
+    "base/mixins",
     "base/responsive",
     "base/typography",
     "base/media",
@@ -24,7 +24,9 @@ sitemap:
     "components/share",
     "components/disqus",
     "pages/404",
-    "pages/home";
+    "pages/home",
+    "pages/work",
+    "pages/about";
 
 ::selection {
     background-color: #bef6a8;
