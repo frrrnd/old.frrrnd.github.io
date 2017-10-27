@@ -1,4 +1,4 @@
-# frrrnd.design
+# [frrrnd.design](http://frrrnd.design)
 
 <p align="center">
     <img src="https://github.com/frrrnd/frrrnd.github.io/blob/master/screenshot.png" width="694" alt="Screenshot">
@@ -7,16 +7,18 @@
 
 > Esse site/blog/portfolio foi feito com Jekyll e será sempre atualizado conforme necessidade (eu espero).
 
----
 
-### TODO
+
+### 📝 TODO
 
 - [ ] Acabar o about com mais informações
 
 - [ ] Incluir projetos na página Trabalhos
 
-### Licença
 
+---
+
+### Licença
 
 Os diretórios ```/_posts```, ```/assets/images```, ```/uploads/images``` e seus conteúdos e subdiretórios são registrados por mim, Fernando Soares, e não podem ser reproduzidos sem minha permissão.
 
