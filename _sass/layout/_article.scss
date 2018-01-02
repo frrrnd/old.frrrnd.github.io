@@ -60,13 +60,16 @@
 */
 
 .article__content {
-	padding-top: 1em;
+	padding: 1em 0;
 
 	h2 {
 		margin-bottom: 20px;
 	}
+
 	p {
 		margin-bottom: 30px;
+		font-size: 18px;
+		color: #666;
 	}
 
 	code {

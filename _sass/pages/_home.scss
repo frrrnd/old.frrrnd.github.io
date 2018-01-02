@@ -7,242 +7,89 @@
 		padding: 2em;
 	}
 	
-	@include large {
-		padding: 5em 0;
-	}
-
-	
-	h1 {
-		font-weight: normal;
-		width: 100%;
-		font-size: 1.2em;
-		color: $text-color;
-		margin: 2em 0 6em 0;
-		line-height: 1.6;
-
-		span {
-			font-weight: bold;
-		}
-
-		a {
-			font-weight: bold;
-		}
-	}
-
-	h2 {
-		font-size: 15px;
-		font-weight: bold;
-		color: #111;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-	}
 }
 
 .wrapper-home {
-	display: flex;
-	flex: 100%;
-	align-content: center;
-}
-
-.bio {
-	display: flex;
-	flex: 50%;
-	align-items: flex-start;
-	flex-direction: column;
-	position: relative;
-
-	@include small {
-		padding: 1em;
-	}
-
-	@include large {
-		padding: 5em 2em 2em 15em;
-	}
-}
-
-.legend {
-	font-size: 14px;
-	color: #BBB;
-	letter-spacing: 4px;
-	text-transform: uppercase;
-	position: fixed;
-	left: 0;
-	top: 50%;
-	transform: rotate(-90deg) translateY(-140px);
-
-	@include small {
-		display: none;
-	}
-}
-
-.photo {
-	display: flex;
-	flex: 40%;
-	position: relative;
-
-	@include small {
-		display: none;
-	}
-
-	img {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-}
-
-.anchor-to-work {
-	width: 80px;
-	height: 80px;
-	background-color: $link-color;
-	border-radius: 100%;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-
-
-	a {
-		color: #fff;
-		font-weight: bold;
-		letter-spacing: 1px;
-		text-transform: uppercase;
-		font-size: 14px;
-		margin-bottom: 10px;
-		padding-top: 15px;
-	}
-}
-
-.arrow-down {
-	width: 15px;
-	height: 25px;
-	background: url('../images/arrow.png') no-repeat;
-	display: block;
-	margin: 10px auto 0;
-
-}
-
-.home-highlight {
-	background-color: #f7f7f7;
-}
-
-/*
-*	Home services
-*/
-
-.home-services {
-	display: flex;
-	align-items: center;
+	max-width: $wrapper-width;
 	width: 100%;
+	margin: 0 auto;
 
-	@include small {
-		flex-direction: column;
-		padding: 2em 0;
-	}
-
-	@include large {
-		flex-direction: row;
-		padding: 6em 0;
-	}
-
-	.col {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		padding: 3em;
-
-		@include small {
-			flex: 100%;
-		}
-
-		@include large {
-			flex: 30%;
-		}
-
-		&:nth-child(1) {
-			h4:before {
-				content: "01 –";
-				display: block;
-				color: #E3E3E3;
-				font-size: 20px;
-				position: absolute;
-				left: -50px;
-				top: 10px;
-			}
-		}
-
-		&:nth-child(2) {
-			h4:before {
-				content: "02 –";
-				display: block;
-				color: #E3E3E3;
-				font-size: 20px;
-				position: absolute;
-				left: -50px;
-				top: 10px;
-			}
-		}
-
-		&:nth-child(3) {
-			h4:before {
-				content: "03 –";
-				display: block;
-				color: #E3E3E3;
-				font-size: 20px;
-				position: absolute;
-				left: -50px;
-				top: 10px;
-			}
-		}
-	}
-
-	figure {
+	h1 {
+		font-size: 38px;
 		width: 100%;
-		margin-bottom: 20px;
-		min-height: 160px;
-
-		img {
-			margin: 0 auto;
-		}
+		text-align: left;
+		color: #fff;
+		font-weight: normal;
+		margin: 0;
+		line-height: 1.6;
+		margin-bottom: 32px;
 	}
 
-	h4 {
-		font-size: 14px;
-		font-weight: bold;
-		position: relative;
+	h2 {
+		display: block;
+		color: #fff;
+		margin-bottom: 16px;
+
+		span {
+			display: inline-block;
+			animation: changeColor 20s infinite alternate;
+		}
 	}
 
 	p {
-		font-weight: normal;
-		font-size: 14px;
+		color: #fff;
+		font-size: 26px;
 	}
 }
 
-.panel {
-	position: relative;
-	display: flex;
-	width: 100%;
-	max-width: 1200px;
-	height: 466px;
-	user-select: none;
-	pointer-events: none;	
+@keyframes changeColor {
+	000% { color: hsl( 10, 90%, 60% ); }
+	005% { color: hsl( 30, 90%, 60% ); }
+	010% { color: hsl( 50, 90%, 60% ); }
+	015% { color: hsl( 70, 90%, 60% ); }
+	030% { color: hsl( 90, 90%, 60% ); }
+	035% { color: hsl( 110, 90%, 60% ); }
+	040% { color: hsl( 130, 90%, 60% ); }
+	045% { color: hsl( 150, 90%, 60% ); }
+	050% { color: hsl( 170, 90%, 60% ); }
+	055% { color: hsl( 190, 90%, 60% ); }
+	060% { color: hsl( 210, 90%, 60% ); }
+	065% { color: hsl( 230, 90%, 60% ); }
+	070% { color: hsl( 250, 90%, 60% ); }
+	075% { color: hsl( 270, 90%, 60% ); }
+	080% { color: hsl( 290, 90%, 60% ); }
+	085% { color: hsl( 310, 90%, 60% ); }
+	090% { color: hsl( 330, 90%, 60% ); }
+	095% { color: hsl( 350, 90%, 60% ); }
+	100% { color: hsl( 370, 90%, 60% ); }
 }
 
-.panel__content-col {
-	flex-basis: 25%;
+@keyframes changeBackgroundColor {
+	000% { background-color: hsl( 10, 90%, 60% ); }
+	005% { background-color: hsl( 30, 90%, 60% ); }
+	010% { background-color: hsl( 50, 90%, 60% ); }
+	015% { background-color: hsl( 70, 90%, 60% ); }
+	030% { background-color: hsl( 90, 90%, 60% ); }
+	035% { background-color: hsl( 110, 90%, 60% ); }
+	040% { background-color: hsl( 130, 90%, 60% ); }
+	045% { background-color: hsl( 150, 90%, 60% ); }
+	050% { background-color: hsl( 170, 90%, 60% ); }
+	055% { background-color: hsl( 190, 90%, 60% ); }
+	060% { background-color: hsl( 210, 90%, 60% ); }
+	065% { background-color: hsl( 230, 90%, 60% ); }
+	070% { background-color: hsl( 250, 90%, 60% ); }
+	075% { background-color: hsl( 270, 90%, 60% ); }
+	080% { background-color: hsl( 290, 90%, 60% ); }
+	085% { background-color: hsl( 310, 90%, 60% ); }
+	090% { background-color: hsl( 330, 90%, 60% ); }
+	095% { background-color: hsl( 350, 90%, 60% ); }
+	100% { background-color: hsl( 370, 90%, 60% ); }
 }
 
-.panel__content {
-	position: absolute;
-	top: 26%;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-}
+.hero {
+	padding: 10em 0;
 
-.panel__img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	a {
+		color: #666;
+	}
 }

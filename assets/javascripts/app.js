@@ -3,7 +3,7 @@
   // Dribbble
     $.jribbble.setToken('0cd1ef6639b1a1d539d62e32712fa8568de32815169192bb33ffd7c698ccb64e');
 
-    $.jribbble.users('fernando').shots({per_page: 4}).then(function(shots) {
+    $.jribbble.users('fernando').shots({per_page: 9}).then(function(shots) {
     let html = [];
     
     shots.forEach(function(shot) {

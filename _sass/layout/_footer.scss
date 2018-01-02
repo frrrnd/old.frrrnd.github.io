@@ -1,28 +1,18 @@
 .footer {
 	width: 100%;
 	padding: 2em 0;
-	animation: .4s footer 1s forwards;
-	opacity: 0;
+	background-color: #000;
 
 	p {
 		width: 100%;
 		text-align: center;
 		font-size: 12px;
 		font-family: $text-font;
+		color: #555;
 	}
 }
 
 .footer__social {
 	flex: 30%;
 	display: flex;
-}
-
-@keyframes footer {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
 }
