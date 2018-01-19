@@ -2,11 +2,6 @@
 	width: 100%;
 	animation: .8s toUp 1s forwards;
 	opacity: 0;
-	
-	@include small {
-		padding: 2em;
-	}
-	
 }
 
 .wrapper-home {

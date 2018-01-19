@@ -5,20 +5,31 @@
 
 .shots {
 	display: grid;
-	grid-template-columns: 400px 400px 400px;
-	grid-template-rows: 300px 300px 300px;
 	list-style-type: none;
 	max-width: 85%;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 0;
 
+	@include small {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+
+	@include large {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
 	&--shot {
-		filter: grayscale(100%);
 		transition: .4s;
 		position: relative;
-		opacity: .2;
 		cursor: pointer;
+
+		@include large {
+			filter: grayscale(100%);
+			opacity: .2;
+		}
 
 		&:hover {
 			filter: grayscale(0);
