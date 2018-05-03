@@ -5,7 +5,6 @@
 }
 
 html {
-    font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     min-height: 100%;
@@ -22,15 +21,12 @@ body {
     font-family: $text-font;
     font-weight: 400;
     color: $text-color;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // align-items: flex-start;
-    // position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     height: 100%;
+    //background: linear-gradient(#fff9f1, #fff);
+    background: #fff;
 }
 
 .wrapper {
@@ -44,21 +40,9 @@ body {
 }
 
 .content {
-    padding-bottom: 2em;
+    
 }
 
 .disqus__wrapper {
     padding: 10px;
-}
-
-@keyframes toUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

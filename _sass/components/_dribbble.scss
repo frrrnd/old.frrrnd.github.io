@@ -1,15 +1,27 @@
 .shots-wrapper {
-	background-color: #333;
 	padding: 2em 0;
 }
 
 .shots {
 	display: grid;
 	list-style-type: none;
-	max-width: 85%;
+	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
 	padding-left: 0;
+
+	&--viewmore {
+		width: 100%;
+		text-align: center;
+		display: block;
+		font-weight: bold;
+		font-size: 20px;
+		padding-top: 20px;
+	}
+
+	li {
+		margin: 10px;
+	}
 
 	@include small {
 		grid-template-columns: repeat(1, 1fr);

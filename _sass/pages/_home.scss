@@ -1,90 +1,39 @@
 .home-section {
 	width: 100%;
-	animation: .8s toUp 1s forwards;
-	opacity: 0;
-}
+	display: flex;
+	flex-direction: row;
+	padding: 0 5vw;
 
-.wrapper-home {
-	max-width: $wrapper-width;
-	width: 100%;
-	margin: 0 auto;
+	&--hero {
 
-	h1 {
-		font-size: 38px;
-		width: 100%;
-		text-align: left;
-		color: #fff;
-		font-weight: normal;
-		margin: 0;
-		line-height: 1.6;
-		margin-bottom: 32px;
-	}
+		img {
+			position: relative;
+		}
 
-	h2 {
-		display: block;
-		color: #fff;
-		margin-bottom: 16px;
+		h1 {
+			font-family: $heading-font;
+			font-size: 58px;
+		}
 
-		span {
-			display: inline-block;
-			animation: changeColor 20s infinite alternate;
+		h2 {
+			font-weight: normal;
+			font-size: 38px;
+			position: relative;
+		}
+
+		h3 {
+			color: #ccc;
 		}
 	}
-
-	p {
-		color: #fff;
-		font-size: 26px;
-	}
 }
 
-@keyframes changeColor {
-	000% { color: hsl( 10, 90%, 60% ); }
-	005% { color: hsl( 30, 90%, 60% ); }
-	010% { color: hsl( 50, 90%, 60% ); }
-	015% { color: hsl( 70, 90%, 60% ); }
-	030% { color: hsl( 90, 90%, 60% ); }
-	035% { color: hsl( 110, 90%, 60% ); }
-	040% { color: hsl( 130, 90%, 60% ); }
-	045% { color: hsl( 150, 90%, 60% ); }
-	050% { color: hsl( 170, 90%, 60% ); }
-	055% { color: hsl( 190, 90%, 60% ); }
-	060% { color: hsl( 210, 90%, 60% ); }
-	065% { color: hsl( 230, 90%, 60% ); }
-	070% { color: hsl( 250, 90%, 60% ); }
-	075% { color: hsl( 270, 90%, 60% ); }
-	080% { color: hsl( 290, 90%, 60% ); }
-	085% { color: hsl( 310, 90%, 60% ); }
-	090% { color: hsl( 330, 90%, 60% ); }
-	095% { color: hsl( 350, 90%, 60% ); }
-	100% { color: hsl( 370, 90%, 60% ); }
+.bio {
+	width: 100%;
+	padding: 5em 0;
 }
 
-@keyframes changeBackgroundColor {
-	000% { background-color: hsl( 10, 90%, 60% ); }
-	005% { background-color: hsl( 30, 90%, 60% ); }
-	010% { background-color: hsl( 50, 90%, 60% ); }
-	015% { background-color: hsl( 70, 90%, 60% ); }
-	030% { background-color: hsl( 90, 90%, 60% ); }
-	035% { background-color: hsl( 110, 90%, 60% ); }
-	040% { background-color: hsl( 130, 90%, 60% ); }
-	045% { background-color: hsl( 150, 90%, 60% ); }
-	050% { background-color: hsl( 170, 90%, 60% ); }
-	055% { background-color: hsl( 190, 90%, 60% ); }
-	060% { background-color: hsl( 210, 90%, 60% ); }
-	065% { background-color: hsl( 230, 90%, 60% ); }
-	070% { background-color: hsl( 250, 90%, 60% ); }
-	075% { background-color: hsl( 270, 90%, 60% ); }
-	080% { background-color: hsl( 290, 90%, 60% ); }
-	085% { background-color: hsl( 310, 90%, 60% ); }
-	090% { background-color: hsl( 330, 90%, 60% ); }
-	095% { background-color: hsl( 350, 90%, 60% ); }
-	100% { background-color: hsl( 370, 90%, 60% ); }
-}
-
-.hero {
-	padding: 10em 0;
-
-	a {
-		color: #666;
-	}
+.photo {
+	display: flex;
+	flex: 40%;
+	flex-direction: column;
 }

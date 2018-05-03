@@ -1,22 +1,11 @@
+jribbble.shots({token: "1180cbed3fe1b7ac56633f99685dfddddec516f3bc333e76994fdef3cabdd3b0"}, function(shotsArray) {
+    document.querySelector(".shots").innerHTML = shotsArray.reduce(function(html, shot) {
+      return html + '<li><a href="'+  shot.html_url + '" target="_blank"><img src="' + shot.images.normal + '"></a></li>';
+    }, "");
+  });
+
+
 (function() {
-
-  // Dribbble
-    $.jribbble.setToken('0cd1ef6639b1a1d539d62e32712fa8568de32815169192bb33ffd7c698ccb64e');
-
-    $.jribbble.users('fernando').shots({per_page: 9}).then(function(shots) {
-    let html = [];
-    
-    shots.forEach(function(shot) {
-        html.push('<li class="shots--reveal shots--shot">');
-        html.push('<a href="' + shot.html_url + '" target="_blank">');
-        html.push('<img src="' + shot.images.normal + '">');
-        html.push('</a></li>');
-    });
-    
-    $('.shots').html(html.join(''));
-    });
-
-
     // Twitter Widget
     window.twttr = (function(d, s, id) {
       let js, fjs = d.getElementsByTagName(s)[0],
@@ -78,14 +67,38 @@ $(function() {
 
 // responsive menu
 
-(function() {
-    let menu = document.getElementById("js-menu");
+// (function() {
+//     let menu = document.getElementById("js-menu");
 
-    menu.onclick = function() {
-        let bar = document.getElementsByClassName('bar')[0];
-        bar.classList.toggle('animate');
+//     menu.onclick = function() {
+//         let bar = document.getElementsByClassName('bar')[0];
+//         bar.classList.toggle('animate');
 
-        let navMenu = document.getElementsByClassName('header__nav')[0];
-        navMenu.classList.toggle('nav--isClosed');
+//         let navMenu = document.getElementsByClassName('header__nav')[0];
+//         navMenu.classList.toggle('nav--isClosed');
+//     }
+// })();
+
+// window.addEventListener('scroll', function(ev) {
+//     var el = document.getElementById('nav-top');
+
+//     var distanceToTop = el.getBoundingClientRect().top;
+
+//     var pegou = $(el).offset().top;
+
+//     if (pegou >= 150) {
+//         el.classList.add('hide-menu');
+//     } else {
+//         el.classList.remove('hide-menu')
+//     }
+// })
+
+// menu active
+var pathname = window.location.pathname;
+
+$('.navigation li').each(function(index) {
+    if (pathname === $(this).attr('href')) {
+        console.log(pathname)
+        $(this).addClass("active");
     }
-})();
+});
