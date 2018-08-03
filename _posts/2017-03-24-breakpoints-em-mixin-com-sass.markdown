@@ -16,17 +16,17 @@ Criaremos 1 mixin com 3 condições em SASS para ser usado no elemento que for n
 Veja o mixin a seguir:
 {% highlight css %}
 	@mixin breakpoint($name) {
-	  @if $name == “small” {
+	  @if $name == small {
 	   @media (max-width: 767px) {
 	    @content;
 	 }
 	}
-	  @else if $name == “medium” { 
+	  @else if $name == medium { 
 	    @media (max-width: 1024px) { 
 	     @content; 
 	   } 
 	  } 
-	  @else if $name == “large” { 
+	  @else if $name == large { 
 	    @media (min-width: 1025px) { 
 	     @content; 
 	    } 

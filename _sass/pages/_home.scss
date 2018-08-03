@@ -11,8 +11,8 @@
 		}
 
 		h1 {
-			font-family: $heading-font;
 			font-size: 58px;
+			font-family: $heading-font;
 		}
 
 		h2 {
@@ -30,10 +30,4 @@
 .bio {
 	width: 100%;
 	padding: 5em 0;
-}
-
-.photo {
-	display: flex;
-	flex: 40%;
-	flex-direction: column;
 }
