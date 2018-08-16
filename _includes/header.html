@@ -1,10 +1,24 @@
 <header class="header">
-    <a href="{{ site.url }}" class="logo">.F</a>
-    <nav class="navigation--top">
-        <ul id="nav-top">
-            <li class="{% if page.permalink == '/' %}link-this{% endif %}"><a href="{{ '/' | prepend: site.baseurl }}">trabalhos</a></li>
-            <li class="{% if page.permalink == '/sobre/' %}link-this{% endif %}"><a href="{{ '/sobre/' | prepend: site.baseurl }}">sobre</a></li>
-            <li class="{% if page.permalink == '/notes/' %}link-this{% endif %}"><a href="{{ '/notes/' | prepend: site.baseurl }}">notes</a></li>
-        </ul>
-    </nav>
+    <div class="wrapper flex">
+    	<div class="logo__top">
+	    	<a href="{{ site.url }}">
+	    		<strong>Fernando</strong>
+	    		Soares
+	    	</a>
+	  	</div>
+	    
+	    <nav class="menu__top">
+	      <ul id="nav-top">
+	          <li class="{% if page.permalink == '/' %}link-this{% endif %}"><a href="{{ '/' | prepend: site.baseurl }}">trabalhos</a></li>
+	          <li class="{% if page.permalink == '/sobre/' %}link-this{% endif %}"><a href="{{ '/sobre/' | prepend: site.baseurl }}">sobre</a></li>
+	          <li class="{% if page.permalink == '/notes/' %}link-this{% endif %}"><a href="{{ '/notes/' | prepend: site.baseurl }}">notes</a></li>
+	      </ul>
+	    </nav>
+
+	    <div class="social__top">
+	    	<ul>
+	    		<!--<li><a href="#">some link</a></li>-->
+	    	</ul>
+	    </div>
+    </div>
 </header>

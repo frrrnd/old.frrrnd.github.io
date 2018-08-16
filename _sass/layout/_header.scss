@@ -1,94 +1,89 @@
 .header {
 	width: 100%;
-	padding: 3em 0;
 	display: flex;
-	flex-direction: row;
-	background-color: #f8f8f8;
-	justify-content: space-between;
-	align-items: center;
-}
+	padding: 5vh 0;
 
-.logo {
-	display: flex;
-	margin-left: 2.5em;
-	font-size: 34px;
-	font-weight: bold;
-	color: #333;
-}
-
-.header__top {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	
-	.logo__link {
-		flex: 50%;
-		display: inline-block;
-		text-align: left;
-		color: #333;
-		font-weight: bold;
-		font-size: 36px;
-
-		a {
-			color: #333;
-		}
+	@include small {
+		flex-direction: column;
 	}
-}
 
-.header__bottom {
-	display: flex;
-	width: 100%;
-}
-
-.header__about {
-	flex: 70%;
-	max-width: 600px;
-	display: flex;
-	flex-direction: column;
-	.logo {
-		color: #333;
-		font-weight: bold;
-	}
-	p {
-		width: 100%;
-		display: block;
-		font-size: 30px;
-		line-height: 1.2;
-		margin-bottom: 10px;
-		padding: 2em 0;
-		font-family: $heading-font;
-	}
-	&:hover p strong {
-		//animation: glitch 2s steps(100) infinite;
-	}
-}
-
-.social-links {
-	width: 100%;
-	display: flex;
-	ul {
-		display: flex;
+	@include large {
 		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
 	}
-	li {
-		font-size: 25px;
-		margin: 10px;
-		a {
-			color: $link-color-social;
+}
+
+.logo__top {
+	display: flex;
+	flex: 1;
+
+	@include small {
+		padding-left: 10px;
+	}
+
+	a {
+		font-size: 12px;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		color: $subheading-color;
+
+		strong {
+			display: block;
 		}
 	}
 }
 
-.logo__image {
-	max-width: 100px;
+.menu__top {
+	display: flex;
+	flex: 2;
+
+	ul {
+		width: 100%;
+		display: flex;
+		padding-left: 0;
+		justify-content: center;
+		align-items: center;
+	}
+
+	li {
+		display: flex;
+		margin: 0 20px;
+		font-size: 13px;
+	}
+
+	a {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: bold;
+		transition: .4s;
+		color: $subheading-color;
+
+		&:hover {
+			color: $primary-color;
+			transition: .4s;
+		}
+	}
 }
 
-.logo__link {
-	color: #333;
+.social__top {
+	display: flex;
+	flex: 1;
+
+	ul {
+		padding-left: 0;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	li {
+		display: flex;
+		font-size: 12px;
+	}
+
+	a {
+		text-transform: uppercase;
+		letter-spacing: 3px;
+	}
 }

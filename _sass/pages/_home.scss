@@ -1,33 +1,28 @@
 .home-section {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	padding: 0 5vw;
+	flex-direction: column;
+	padding: 10vh 0;
 
-	&--hero {
+	h1, h2 {
+		width: 100%;
+		text-align: center;
+	}
 
-		img {
-			position: relative;
-		}
+	h1 {
+		font-size: 3em;
+		color: $heading-color;
+		margin-bottom: 2vh;
+	}
 
-		h1 {
-			font-size: 58px;
-			font-family: $heading-font;
-		}
-
-		h2 {
-			font-weight: normal;
-			font-size: 38px;
-			position: relative;
-		}
-
-		h3 {
-			color: #ccc;
-		}
+	h2 {
+		font-size: 1.5em;
+		color: $subheading-color;
 	}
 }
 
-.bio {
+.home-works {
 	width: 100%;
-	padding: 5em 0;
+	display: flex;
+	padding: 3vh 0;
 }

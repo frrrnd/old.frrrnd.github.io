@@ -25,8 +25,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
     height: 100%;
-    //background: linear-gradient(#fff9f1, #fff);
-    background: #fff;
 }
 
 .wrapper {
@@ -35,8 +33,24 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+
+    @include small {
+        flex-direction: column;
+    }
+
+    @include large {
+        flex-direction: row;
+    }
+}
+
 .main {
     width: 100%;
+
+    @include small {
+        padding: 0 10px;
+    }
 }
 
 .content {
@@ -45,4 +59,8 @@ body {
 
 .disqus__wrapper {
     padding: 10px;
+}
+
+.give-me-space {
+    padding: 1vh 0 3vh 0;
 }

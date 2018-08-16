@@ -6,10 +6,10 @@ sitemap:
 @charset "utf-8";
 
 @import
+    "base/mixins",
     "base/global",
     "base/normalize",
     "base/general",
-    "base/mixins",
     "utils/mixins",
     "base/responsive",
     "base/typography",

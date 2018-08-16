@@ -7,20 +7,38 @@
 
 .wrapper {
     h1 {
-        font-size: 52px;
         font-family: $heading-font;
     }
 }
 
 .grid-container {
     display: flex;
-    flex-direction: row;
+
+    @include small {
+        flex-direction: column;
+    }
+
+    @include large {
+        flex-direction: row;
+    }
 }
 
 .about-left {
     display: flex;
     flex: 60%;
     padding-right: 2em;
+
+    p {
+        padding-left: 12px;
+    }
+
+    @include small {
+        padding-top: 2vh;
+    }
+
+    @include large {
+        padding-top: 30vh;
+    }
 }
 
 .about-right {

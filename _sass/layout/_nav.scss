@@ -1,145 +1,42 @@
 .navigation {
+	width: 100%;
+	display: flex;
+	padding: 5vh 0;
+	
 	ul {
-		padding-left: 0;
 		width: 100%;
+		padding-left: 0;
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
+
+		@include small {
+			flex-direction: column;
+		}
 	}
 
 	li {
-		display: inline-block;
-		padding: 10px 0;
-		font-size: 18px;
-		font-weight: bold;
-
-		a {
-			color: #666;
-			transition: .4s;
-		}
-
-		&:nth-child(1) {
-				
-			a {
-				&:hover {
-					transition: .4s;
-					color: #ea4c89;
-				}
-			}
-		}
-
-		&:nth-child(2) {
-			a {
-				&:hover {
-					transition: .4s;
-					color: #333;
-				}
-			}
-		}
-
-		&:nth-child(3) {
-			a {
-				&:hover {
-					color: red;
-					transition: .4s;
-				}
-			}
-		}
-
-		&:nth-child(4) {
-			a {
-				&:hover {
-					color: #00aced;
-					transition: .4s;
-				}
-			}
-		}
-
-		a {
-			&:after {
-				content: "";
-				width: 25px;
-				height: 20px;
-				display: inline-block;
-				margin-left: 10px;
-			}
-		}
-	}
-
-	&--top {
 		display: flex;
-		z-index: 2;
-		width: 100%;
-		transition: .3s ease;
+		margin: 0 10px;
+		text-transform: uppercase;
 		
-
-		ul {
+		@include small {
+			margin: 15px 10px;
 			width: 100%;
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
-			list-style: none;
-			padding-right: 10em;
-			transition: .6s;
-
-			li {
-				margin: 0 20px;
-				font-weight: bold;
-			}
-
-			a {
-
-				&:after {
-					content: "";
-					height: 2px;
-					background-color: transparent;
-					display: block;
-				}
-
-				&:hover {
-					&:after {
-						background-color: $link-color;
-						animation: .3s menu-top forwards;
-					}
-				}
-
-				@keyframes menu-top {
-					0% {
-						width: 0;
-					}
-
-					100% {
-						width: 100%;
-					}
-				}
-			}
+			text-align: center;
+			display: block;
 		}
 	}
-}
 
-.hide-menu {
-	transform: translateY(-100px);
-	transition: .6s ease;
-	filter: blur(5px);
-}
-
-.link-this {
-	position: relative;
-
-	&:before {
-		content: "";
-		width: 100%;
-		height: 1px;
-		background-color: #CCC;
-		position: absolute;
-		left: 0;
-		top: 55%;
-	}
-	
 	a {
-		color: #CCC;
+		letter-spacing: 3px;
+		font-weight: bold;
+		font-size: 12px;
+		transition: .4s;
 
-		&:after {
-			display: none!important;
+		&:hover {
+			color: #016dfe;
+			transition: .4s;
 		}
 	}
 }
