@@ -1,7 +1,7 @@
 .header {
 	width: 100%;
 	display: flex;
-	padding: 5vh 0;
+	
 
 	@include small {
 		flex-direction: column;
@@ -9,21 +9,25 @@
 
 	@include large {
 		flex-direction: row;
+		padding: 5vh 0;
 	}
 }
 
 .logo__top {
 	display: flex;
 	flex: 1;
+	padding: 10px;
+	flex-direction: row;
+	align-items: center;
 
-	@include small {
-		padding-left: 10px;
+	span {
+		font-size: 13px;
 	}
 
 	a {
 		font-size: 12px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		align-self: center;
 		color: $subheading-color;
 
@@ -33,22 +37,88 @@
 	}
 }
 
+.gliphy {
+	width: 30px;
+	height: 30px;
+	background-color: #016dfe;
+	display: flex;
+	position: relative;
+	margin-right: 12px;
+	transition: .3s;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 10px;
+		background-color: #eee;
+		position: absolute;
+		left: 0;
+		top: 0px;
+		z-index: 2;
+		transition: .3s;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		width: 30px;
+		height: 15px;
+		background-color: #fe7b06;
+		position: absolute;
+		left: 0;
+		top: 5px;
+		z-index: 1;
+		transition: .3s;
+	}
+
+	&:hover {
+		transition: .3s;
+
+		&:after,
+		&:before {
+			height: 0;
+			transition: .3s;
+		}
+	}
+}
+
+.name {
+	display: none;
+	visibility: hidden;
+}
+
 .menu__top {
 	display: flex;
 	flex: 2;
+	padding: 10px;
 
 	ul {
 		width: 100%;
 		display: flex;
 		padding-left: 0;
-		justify-content: center;
 		align-items: center;
+
+		@include large {
+			justify-content: flex-end;
+		}
+
+		@include small {
+			justify-content: flex-start;
+		}
 	}
 
 	li {
 		display: flex;
-		margin: 0 20px;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 20px;
+		margin-right: 20px;
 		font-size: 13px;
+
+		&:first-child {
+			margin-left: 0;
+		}
 	}
 
 	a {
@@ -65,9 +135,18 @@
 	}
 }
 
+.link-this {
+	a {
+		color: $primary-color;
+	}
+}
+
 .social__top {
 	display: flex;
 	flex: 1;
+	padding: 10px;
+	display: none;
+	visibility: hidden;
 
 	ul {
 		padding-left: 0;

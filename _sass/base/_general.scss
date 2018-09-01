@@ -5,12 +5,21 @@
 }
 
 html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
     min-height: 100%;
     background-color: $background-color;
     opacity: 0;
     transition: opacity 0.5s ease;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 
     &.active {
         opacity: 1;
@@ -21,8 +30,6 @@ body {
     font-family: $text-font;
     font-weight: 400;
     color: $text-color;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     margin: 0;
     height: 100%;
 }

@@ -96,7 +96,7 @@ $(function() {
 // menu active
 var pathname = window.location.pathname;
 
-$('.navigation li').each(function(index) {
+$('#nav-top li').each(function(index) {
     if (pathname === $(this).attr('href')) {
         console.log(pathname)
         $(this).addClass("active");

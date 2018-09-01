@@ -1,4 +1,6 @@
-$screen-small: 1024px;
+$screen-small: 800px;
+$screen-medium-start: 801px;
+$screen-medium-end: 1024px;
 $screen-large: 1025px;
 
 
@@ -8,22 +10,14 @@ $screen-large: 1025px;
     }
 }
 
+@mixin medio {
+    @media (min-width: $screen-medium-start ) and (max-width: $screen-medium-end) {
+        @content;
+    }
+}
+
 @mixin large {
     @media (min-width: $screen-large) {
         @content;
     }
 }
-
-// @mixin breakpoint($name) {
-//     @if $name == small {
-//         @media (max-width: 1024px) {
-//             @content;
-//         }
-//     }
-
-//     @else $name == large { 
-//         @media (min-width: 1025px) {
-//             @content;
-//         }
-//     }
-// }
