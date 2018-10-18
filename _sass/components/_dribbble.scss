@@ -24,7 +24,6 @@
 		padding: 2em 2em 2em 0;
 
 		img {
-			border: 3px solid #eeeeee;
 			transition: .4s;
 		}
 
@@ -47,7 +46,7 @@
 	}
 
 	@include large {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(3, 1fr);
 	}
 

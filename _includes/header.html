@@ -1,21 +1,22 @@
 <header class="header">
     <div class="wrapper flex">
     	<div class="logo__top">
-			
 	    	<a href="{{ site.url }}">
-				<span class="gliphy"></span>
-				<span class="name">
-					<strong>Fernando</strong>
-					Soares
-				</span>
+					<span class="name">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273.6 274.5" class="logo">
+							<rect x="305.5" y="242.42" width="82.06" height="82.06" transform="translate(-386.73 183.12) rotate(-45)" style="stroke:#fff;stroke-miterlimit:10"/>
+							<polygon points="24.17 3.8 157.79 137.25 21.04 274 89.41 274 226.16 137.25 135 46.08 226.16 46.08 272.38 0.5 21.04 0.57 24.17 3.8" style="stroke:#fff;stroke-miterlimit:10"/>
+					</svg>
+					Fernando Soares
+					</span>
 	    	</a>
 	  	</div>
 	    
 	    <nav class="menu__top">
 	      <ul id="nav-top">
-	          <li class="{% if page.permalink == '/' %}link-this{% endif %}"><a href="{{ '/' | prepend: site.baseurl }}">trabalhos</a></li>
-	          <li class="{% if page.permalink == '/sobre/' %}link-this{% endif %}"><a href="{{ '/sobre/' | prepend: site.baseurl }}">sobre</a></li>
-	          <li class="{% if page.permalink == '/notes/' %}link-this{% endif %}"><a href="{{ '/notes/' | prepend: site.baseurl }}">notes</a></li>
+	          <!--<li class="{% if page.permalink == '/' %}link-this{% endif %}"><a href="{{ '/' | prepend: site.baseurl }}">trabalhos</a></li>-->
+	          <li class="{% if page.permalink == '/sobre/' %}link-this{% endif %}"><a href="{{ '/sobre/' | prepend: site.baseurl }}">Sobre.</a></li>
+	          <li class="{% if page.permalink == '/notes/' %}link-this{% endif %}"><a href="{{ '/notes/' | prepend: site.baseurl }}">Notes.</a></li>
 	      </ul>
 	    </nav>
 

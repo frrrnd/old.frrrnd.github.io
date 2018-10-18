@@ -7,10 +7,10 @@ $wrapper-width: 90em;
 
 /* Typo */
 $text-font:  -apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$heading-font:'Archivo Black', sans-serif;
+$heading-font: $text-font;
 
 /* Colors */
-$heading-color: #111;
+$heading-color: #333;
 $subheading-color: #AAA;
 $text-color: #555;
 $primary-color: #016dfe;

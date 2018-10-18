@@ -9,7 +9,7 @@
 
 	@include large {
 		flex-direction: row;
-		padding: 5vh 0;
+		padding: 3vh 0;
 	}
 }
 
@@ -20,16 +20,12 @@
 	flex-direction: row;
 	align-items: center;
 
-	span {
-		font-size: 13px;
-	}
-
 	a {
 		font-size: 12px;
 		display: flex;
 		flex-direction: row;
 		align-self: center;
-		color: $subheading-color;
+		color: $heading-color;
 
 		strong {
 			display: block;
@@ -37,55 +33,17 @@
 	}
 }
 
-.gliphy {
-	width: 30px;
-	height: 30px;
-	background-color: #016dfe;
+.name {
+	font-size: 24px;
+	font-weight: bold;
 	display: flex;
-	position: relative;
-	margin-right: 12px;
-	transition: .3s;
-
-	&:before {
-		content: "";
-		display: block;
-		width: 30px;
-		height: 10px;
-		background-color: #eee;
-		position: absolute;
-		left: 0;
-		top: 0px;
-		z-index: 2;
-		transition: .3s;
-	}
-
-	&:after {
-		content: "";
-		display: block;
-		width: 30px;
-		height: 15px;
-		background-color: #fe7b06;
-		position: absolute;
-		left: 0;
-		top: 5px;
-		z-index: 1;
-		transition: .3s;
-	}
-
-	&:hover {
-		transition: .3s;
-
-		&:after,
-		&:before {
-			height: 0;
-			transition: .3s;
-		}
-	}
+  align-items: center;
 }
 
-.name {
-	display: none;
-	visibility: hidden;
+.logo {
+	max-width: 30px;
+	width: 100%;
+	margin-right: 10px;
 }
 
 .menu__top {
@@ -114,7 +72,7 @@
 		margin-bottom: 0;
 		margin-left: 20px;
 		margin-right: 20px;
-		font-size: 13px;
+		font-size: 18px;
 
 		&:first-child {
 			margin-left: 0;
@@ -122,11 +80,9 @@
 	}
 
 	a {
-		text-transform: uppercase;
-		letter-spacing: 2px;
 		font-weight: bold;
 		transition: .4s;
-		color: $subheading-color;
+		color: $heading-color;
 
 		&:hover {
 			color: $primary-color;
