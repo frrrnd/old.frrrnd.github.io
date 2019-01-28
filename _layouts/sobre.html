@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<div class="wrapper about-page">
-	<h1 class="give-me-space">{{ page.title }}</h1>
-	
-	
-	<section class="grid-container">
-		<section class="about-left">
+<div class="wrapper wrapper--wide page-about">
+
+	<section class="about-column">
+		<h1 class="page-headline gif">{{ page.title }}</h1>
+		<section class="about-column column-left">
+			<figure>
+				<img src="/assets/images/eu.jpg" alt="Eu =)" class="avatar">
+			</figure>
+		</section>
+		
+		<section class="about-column column-right">
 			<article class="article__content">
 				{{ content }}
 			</article>
-		</section>
-
-		<section class="about-right">
-			<p><img src="/assets/images/sobre-eu.jpg" alt="Fernando Soares"></p>
 		</section>
 	</section>
 </div>

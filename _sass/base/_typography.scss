@@ -24,10 +24,11 @@ p , li {
     font-size: 18px;
 
     code {
-        background-color: #eee;
-        border: 1px solid #ccc;
+        background-color: #19171c;
+        border: 1px solid #313131;
         padding: 0 2px;
         border-radius: 3px;
+        color: #2a9292;
     }
 }
 
@@ -75,6 +76,21 @@ blockquote {
     }
 }
 
+
+.page-headline {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    height: 100%;
+
+    @include large {
+        font-size: 4em;
+    }
+
+    @include small {
+        font-size: 16px;
+    }
+}
 
 .page-title {
     text-align: center;

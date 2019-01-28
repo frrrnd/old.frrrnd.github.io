@@ -1,7 +1,6 @@
 .navigation {
 	width: 100%;
 	display: flex;
-	padding: 5vh 0;
 	
 	ul {
 		width: 100%;
@@ -32,7 +31,7 @@
 		transition: .4s;
 
 		&:hover {
-			color: #016dfe;
+			color: $primary-color;
 			transition: .4s;
 		}
 	}

@@ -1,40 +1,68 @@
 ---
 layout: home
 title: Fernando Soares
-subtitle: UI/UX Designer
+subtitle: UX, UI & Front End Design
 sitemap:
   priority: 0.9
 ---
 
 <section class="home-section">
   <div class="wrapper">
-    <span class="hello">Olá</span>
-    <h1>Meu nome é <strong>Fernando Soares</strong> e eu trabalho com <strong>UX, UI e Front End Design</strong> há 6 anos. Meu foco é usabilidade e deixar as interfaces mais bonitas e atraentes.</h1>
+    <h3 class="section-title">Olá</h3>
+    <h1>Meu nome é <strong class="gif">Fernando Soares</strong> e eu trabalho com <br> <strong class="gif">UX, UI e Front End Design</strong> há 7 anos em Florianópolis.</h1>
   </div>
 </section>
 
 <section class="home-works">
   <div class="wrapper">
     <div class="shots-wrapper">
-      <ul class="shots">
+      <h3 class="section-title">Works</h3>
+      <ul class="grid-gallery">
+        <li>
+          <a href="https://www.instagram.com/frrrnd.design/" title="Ver trabalhos no Instagram" target="_blank">
+            <figure>
+              <img src="/assets/images/instagram.jpg" alt="Trabalhos no Instagram">
+              <figcaption>Instagram</figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://dribbble.com/fernando" title="Ver trabalhos no Dribbble" target="_blank">
+            <figure>
+              <img src="/assets/images/dribbble.jpg" alt="Trabalhos no Dribbble">
+              <figcaption>Dribbble</figcaption>
+            </figure>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://codepen.io/frrrnd/" title="Ver trabalhos no Codepen" target="_blank">
+            <figure>
+              <img src="/assets/images/codepen.jpg" alt="Trabalhos no Codepen">
+              <figcaption>Codepen</figcaption>
+            </figure>
+          </a>
+        </li>
       </ul>
-      <a class="shots--viewmore" href="https://dribbble.com/fernando" target="_blank">ver mais</a>
     </div>
   </div>
 </section>
 
-<!-- <section class="home-section home-notes">
+<section class="home-section home-notes">
   <div class="wrapper">
-    <h3>Notes</h3>
+    <h3 class="section-title">Notes</h3>
     <ul class="notes__list">
       {% for post in site.posts limit:5  %}
       <li>
         <a href="{{ site.url }}{{ post.url }}">
-          <time datetime="{{ post.date | date: "%d/%m/%Y" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
           <h2>{{ post.title }}</h2>
+          <time datetime="{{ post.date | date: "%d/%m/%Y" }}">{{ post.date | date: "%d/%m/%Y" }}</time>
         </a>
       </li>
       {% endfor %}
     </ul>
+
+    <a href="/notes" class="more"> ¬ ver mais</a>
   </div>
-</section> -->
+</section>

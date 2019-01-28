@@ -1,54 +1,48 @@
+.page-about {
+    p {
+        font-size: 20px;
+    }
 
-.about-page {
-    h1 {
-        font-size: 3em;
+    @include large {
+        h1  {
+            padding-top: 15%;
+        }
     }
 }
 
-.wrapper {
-    h1 {
-        font-family: $heading-font;
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+
+    @include large {
+        max-width: 300px;
+        margin-left: -4em;
+        margin-top: 0em;
+    }
+
+    @include small {
+        max-width: 260px;
     }
 }
 
-.grid-container {
+.about-column {
     display: flex;
+    flex-direction: row;
+    padding: 2em 1em 1em;
 
     @include small {
         flex-direction: column;
     }
+}
 
+.column-left {
+
+}
+
+.column-right {
     @include large {
-        flex-direction: row;
+        padding-left: 10%;
     }
 }
-
-.about-left {
-    display: flex;
-    flex: 60%;
-    padding-right: 2em;
-
-    p {
-        padding-left: 12px;
-    }
-
-    @include small {
-        padding-top: 2vh;
-    }
-
-    @include large {
-        padding-top: 30vh;
-    }
-}
-
-.about-right {
-    display: flex;
-    flex: 40%;
-}
-
-/*
-*
-*    Falta arrumar a parte do mobile... ver se os mixins estão funcionando.
-*
-*
-*/

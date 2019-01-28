@@ -13,14 +13,8 @@ medium_link:
 		<p><a class="post-medium" target="_blank" href="{{page.medium_link}}">Esse post foi publicado também no medium!</a></p>
 		{% endif %}
 			
-			<div class="article__content">
-		        {{ content }}
-		    </div>
-		
-		<div class="share">
-			<ul>
-				<li><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text={{page.title}}" data-size="large">Tweet</a></li>
-			</ul>
+		<div class="article__content">
+			{{ content }}
 		</div>
 
 		<div class="pagination">
@@ -36,6 +30,4 @@ medium_link:
 			{% endif %}
 		</div>
 	</article>
-
-	{% include externals/disqus.html %}
 </div>

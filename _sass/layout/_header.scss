@@ -9,7 +9,7 @@
 
 	@include large {
 		flex-direction: row;
-		padding: 3vh 0;
+		padding: 3vh 2vw;
 	}
 }
 
@@ -46,6 +46,7 @@
 	margin-right: 10px;
 }
 
+
 .menu__top {
 	display: flex;
 	flex: 2;
@@ -81,19 +82,24 @@
 
 	a {
 		font-weight: bold;
-		transition: .4s;
 		color: $heading-color;
-
-		&:hover {
-			color: $primary-color;
-			transition: .4s;
-		}
+		font-size: 22px;
+		letter-spacing: 1px;
 	}
 }
 
+.gif {
+	&:hover {
+		background-image: url('../images/random.gif');
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+
 .link-this {
 	a {
-		color: $primary-color;
+		color: #fff;
 	}
 }
 
