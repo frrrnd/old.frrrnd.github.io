@@ -8,3 +8,5 @@ gem 'kramdown'
 gem 'jekyll-watch'
 
 # gem "rails"
+
+gem "jekyll"
