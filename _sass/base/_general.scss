@@ -18,6 +18,13 @@ html {
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
+    opacity: 0;
+    transition: opacity .5s ease;
+
+    &.active {
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
 }
 
 body {

@@ -5,6 +5,12 @@ sitemap:
 ---
 @charset "utf-8";
 
+@import "variables",
+        "jeet/index",
+        "layout";
+
+
+/*
 @import
     "base/mixins",
     "base/global",
@@ -29,7 +35,20 @@ sitemap:
     "pages/work",
     "pages/about",
     "pages/notes";
-
+*/
 ::selection {
     background-color: #bef6a8;
+}
+
+.element {
+    margin-bottom: 12px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.element { 
+    margin: 0; 
+    padding: 0; 
+    display: block;
 }

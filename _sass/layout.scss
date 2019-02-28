@@ -1,0 +1,50 @@
+html {
+ 	box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+ 	box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'hk_kontrastbold';
+    src: url('../fonts/hkkontrast-bold-webfont.woff2') format('woff2'),
+         url('../fonts/hkkontrast-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: $background-site-color;
+	font-family: 'hk_kontrastbold';
+}
+
+.wrap {
+	max-width: $wrap-width;
+	width: 100%;
+	margin: 0 auto;
+}
+
+// Header ======================================================================
+
+.header {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo-container {
+	@include column(1/6);
+}

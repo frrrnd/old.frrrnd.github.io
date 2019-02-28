@@ -1,35 +1,27 @@
 <header class="header">
-    <div class="wrapper flex">
-    	<div class="logo__top">
-	    	<a href="{{ site.url }}">
-					<span class="name">
-							<svg viewBox="0 0 274 275" fill="none" class="logo">
-								<g clip-path="url(#clip0)">
-									<path d="M58.7331 80.4905L0.707947 138.516L58.7331 196.541L116.758 138.516L58.7331 80.4905Z" fill="#727A8E" stroke="white" stroke-miterlimit="10"/>
-									<path d="M24.17 3.8L157.79 137.25L21.04 274H89.41L226.16 137.25L135 46.08H226.16L272.38 0.5L21.04 0.57L24.17 3.8Z" fill="#727A8E" stroke="white" stroke-miterlimit="10"/>
-								</g>
-								<defs>
-									<clipPath id="clip0">
-										<rect width="273.6" height="274.5" fill="white"/>
-									</clipPath>
-								</defs>
-								</svg>
-					</span>
+    <div class="wrap">
+    	<div class="logo-container">
+	    	<a href="{{ site.url }}">		
+				<svg viewBox="0 0 274 275" fill="none" class="logo">
+					<g clip-path="url(#clip0)">
+						<path d="M58.7331 80.4905L0.707947 138.516L58.7331 196.541L116.758 138.516L58.7331 80.4905Z" fill="#727A8E" stroke="white" stroke-miterlimit="10"/>
+						<path d="M24.17 3.8L157.79 137.25L21.04 274H89.41L226.16 137.25L135 46.08H226.16L272.38 0.5L21.04 0.57L24.17 3.8Z" fill="#727A8E" stroke="white" stroke-miterlimit="10"/>
+					</g>
+					<defs>
+						<clipPath id="clip0">
+							<rect width="273.6" height="274.5" fill="white"/>
+						</clipPath>
+					</defs>
+				</svg>
 	    	</a>
 	  	</div>
 	    
-	    <nav class="menu__top">
-	      <ul id="nav-top">
+	    <nav class="">
+	      <ul id="">
 	          <!--<li class="{% if page.permalink == '/' %}link-this{% endif %}"><a href="{{ '/' | prepend: site.baseurl }}">trabalhos</a></li>-->
 	          <li class="{% if page.permalink == '/sobre/' %}link-this{% endif %}"><a class="gif" href="{{ '/sobre/' | prepend: site.baseurl }}">sobre</a></li>
 	          <li class="{% if page.permalink == '/notes/' %}link-this{% endif %}"><a class="gif" href="{{ '/notes/' | prepend: site.baseurl }}">notes</a></li>
 	      </ul>
 	    </nav>
-
-	    <div class="social__top">
-	    	<ul>
-	    		<!--<li><a href="#">some link</a></li>-->
-	    	</ul>
-	    </div>
     </div>
 </header>
